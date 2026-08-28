@@ -1,6 +1,6 @@
 {
   "pg_avvisi_e_bandi": {
-    "checked": "2026-08-28T15:44:47.916341+00:00",
+    "checked": "2026-08-28T16:02:30.430990+00:00",
     "consecutive_errors": 0,
     "error_notified": false,
     "hash": "84eb9b84a063075c40c9396d2c60e8133dabaca1750aa93bb868ef3fb18c3791",
@@ -10,7 +10,7 @@
     "last_error": null
   },
   "pg_sc_avvisi_presentazione_progetti": {
-    "checked": "2026-08-28T15:44:48.553445+00:00",
+    "checked": "2026-08-28T16:02:31.240995+00:00",
     "consecutive_errors": 0,
     "error_notified": false,
     "hash": "c841bbe0ad58c13981e7c323352bcaf2c6597ec9a2ecb0842419f0cd2818e5f3",
@@ -21,7 +21,7 @@
     "last_error": null
   },
   "pg_sc_bandi_selezione_volontari": {
-    "checked": "2026-08-28T15:44:49.186918+00:00",
+    "checked": "2026-08-28T16:02:32.168117+00:00",
     "consecutive_errors": 0,
     "error_notified": false,
     "hash": "d62dc26edee35470ec0beb6e9ae2a422e13af21e511f74c1bab0a32bd5040684",
@@ -31,7 +31,7 @@
     "last_error": null
   },
   "pg_sc_site_scan": {
-    "checked": "2026-08-28T15:44:55.601925+00:00",
+    "checked": "2026-08-28T16:02:41.515360+00:00",
     "consecutive_errors": 0,
     "error_notified": false,
     "hash": "37982288add79e088ee5e91373b8f6bf04eb575c9637cd0430bde1b4f50ac7a8",
@@ -89,7 +89,7 @@
     "partial_errors": []
   },
   "supplenze_convocazioni": {
-    "checked": "2026-08-28T15:44:56.481957+00:00",
+    "checked": "2026-08-28T16:02:42.531615+00:00",
     "consecutive_errors": 0,
     "error_notified": false,
     "hash": "2b4abe94564ef9f9697ef08b810376f570ba52911543a8e4cd86785d270f857c",
@@ -108,7 +108,7 @@
     "last_error": null
   },
   "uke_dottorati": {
-    "checked": "2026-08-28T15:44:40.716213+00:00",
+    "checked": "2026-08-28T16:02:20.791072+00:00",
     "consecutive_errors": 0,
     "error_notified": false,
     "hash": "1bd3ca28ab781ef9d1381d01199d6c244aa75357119afb1fd31240b9968c28f4",
@@ -231,7 +231,7 @@
     "last_error": null
   },
   "uke_lavoro_altre_figure": {
-    "checked": "2026-08-28T15:44:45.662274+00:00",
+    "checked": "2026-08-28T16:02:26.553221+00:00",
     "consecutive_errors": 0,
     "error_notified": false,
     "hash": "69fd479eb50e709e4475a252fae1f311d76dd7283bab1fb43e88e70a95b3af71",
@@ -241,7 +241,7 @@
     "last_error": null
   },
   "uke_lavoro_docenti_a_contratto": {
-    "checked": "2026-08-28T15:44:44.138576+00:00",
+    "checked": "2026-08-28T16:02:24.731987+00:00",
     "consecutive_errors": 0,
     "error_notified": false,
     "hash": "5147f5e7aedb5c52f0607fe521074db0027025df36478fcebf86365932798fe2",
@@ -251,7 +251,7 @@
     "last_error": null
   },
   "uke_lavoro_opportunita_studenti": {
-    "checked": "2026-08-28T15:44:47.161140+00:00",
+    "checked": "2026-08-28T16:02:28.549157+00:00",
     "consecutive_errors": 0,
     "error_notified": false,
     "hash": "cc7ce8ff30b72a6a015f30831415598794e842f2116edbc162d7688f9703c577",
@@ -261,7 +261,7 @@
     "last_error": null
   },
   "uke_lavoro_professori_ricercatori": {
-    "checked": "2026-08-28T15:44:42.578209+00:00",
+    "checked": "2026-08-28T16:02:22.647666+00:00",
     "consecutive_errors": 0,
     "error_notified": false,
     "hash": "3d9789439e26f1bdce11a0ada67712c0dadcc6cc296310762f495a5ee779ceb2",
