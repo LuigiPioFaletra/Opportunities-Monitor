@@ -1,0 +1,91 @@
+[
+  {
+    "id": "uke_dottorati",
+    "label": "UKE Enna - Dottorati di ricerca",
+    "type": "listing",
+    "url": "https://uke.it/didattica/dottorati-di-ricerca",
+    "check_degree_class": false
+  },
+  {
+    "id": "uke_lavoro_professori_ricercatori",
+    "label": "UKE Enna - Lavora con UKE: Professori e ricercatori",
+    "type": "listing",
+    "url": "https://uke.it/info-per/lavora-con-uke/professori-e-ricercatori",
+    "check_degree_class": true
+  },
+  {
+    "id": "uke_lavoro_docenti_a_contratto",
+    "label": "UKE Enna - Lavora con UKE: Docenti a contratto",
+    "type": "listing",
+    "url": "https://uke.it/info-per/lavora-con-uke/docenti-a-contratto",
+    "check_degree_class": true
+  },
+  {
+    "id": "uke_lavoro_altre_figure",
+    "label": "UKE Enna - Lavora con UKE: Altre figure",
+    "type": "listing",
+    "url": "https://uke.it/info-per/lavora-con-uke/altre-figure",
+    "check_degree_class": true
+  },
+  {
+    "id": "uke_lavoro_opportunita_studenti",
+    "label": "UKE Enna - Lavora con UKE: Opportunita' per gli studenti",
+    "type": "listing",
+    "url": "https://uke.it/info-per/lavora-con-uke/opportunita-per-gli-studenti",
+    "check_degree_class": true
+  },
+  {
+    "id": "pg_avvisi_e_bandi",
+    "label": "Politiche Giovanili - Avvisi e bandi",
+    "type": "listing",
+    "url": "https://www.politichegiovanili.gov.it/comunicazione/avvisi-e-bandi/",
+    "check_degree_class": false
+  },
+  {
+    "id": "pg_sc_avvisi_presentazione_progetti",
+    "label": "Servizio Civile - Avvisi presentazione programmi e progetti",
+    "type": "listing",
+    "url": "https://www.politichegiovanili.gov.it/servizio-civile/bandi-e-avvisi-di-servizio-civile/avvisi-di-presentazione-programmi-e-progetti/",
+    "check_degree_class": false
+  },
+  {
+    "id": "pg_sc_bandi_selezione_volontari",
+    "label": "Servizio Civile - Bandi di selezione volontari",
+    "type": "listing",
+    "url": "https://www.politichegiovanili.gov.it/servizio-civile/bandi-e-avvisi-di-servizio-civile/bandi-di-selezione-volontari/",
+    "check_degree_class": false
+  },
+  {
+    "id": "pg_sc_site_scan",
+    "label": "Servizio Civile - Scansione siti per nuovi bandi",
+    "type": "keyword_scan",
+    "hub_urls": [
+      "https://www.politichegiovanili.gov.it/",
+      "https://www.politichegiovanili.gov.it/comunicazione/avvisi-e-bandi/",
+      "https://www.politichegiovanili.gov.it/comunicazione/news/",
+      "https://www.politichegiovanili.gov.it/servizio-civile/",
+      "https://www.politichegiovanili.gov.it/servizio-civile/bandi-e-avvisi-di-servizio-civile/",
+      "https://www.politichegiovanili.gov.it/servizio-civile/bandi-e-avvisi-di-servizio-civile/avvisi-di-presentazione-programmi-e-progetti/",
+      "https://www.politichegiovanili.gov.it/servizio-civile/bandi-e-avvisi-di-servizio-civile/bandi-di-selezione-volontari/",
+      "https://scelgoilserviziocivile.gov.it/",
+      "https://scelgoilserviziocivile.gov.it/leggi-il-bando/"
+    ],
+    "keywords": [
+      "servizio civile",
+      "bando",
+      "avviso di selezione",
+      "avviso di presentazione",
+      "selezione volontari",
+      "servizio-civile",
+      "operatori volontari"
+    ]
+  },
+  {
+    "id": "supplenze_convocazioni",
+    "label": "USR Caltanissetta-Enna - Reclutamento docenti (supplenze/GPS)",
+    "type": "listing",
+    "url": "https://cl-en.usr.sicilia.it/personale-scuola/personale-docente/reclutamento-docenti/",
+    "check_degree_class": false,
+    "enabled": true
+  }
+]
