@@ -26,7 +26,7 @@ import re
 import sys
 import time
 from datetime import datetime, timezone
-from urllib.parse import urljoin
+from urllib.parse import urljoin, urlsplit
 
 import requests
 from bs4 import BeautifulSoup
@@ -50,6 +50,19 @@ USER_AGENT = (
 REQUEST_TIMEOUT = 30
 MAX_RETRIES = 3
 RETRY_DELAY_SECONDS = 5
+
+# Minimum time between two requests to the *same* host, regardless of which
+# source triggered them. A single run can hammer the same domain with many
+# back-to-back requests (e.g. pg_sc_site_scan alone hits 7 different
+# politichegiovanili.gov.it URLs one after another, on top of the 3 other
+# listing sources on that same host) with no session/cookie continuity
+# between them - a pattern that reads as automated traffic to most WAFs and
+# can trigger a temporary, silent block (connection attempts just get
+# dropped) even though a single isolated request to the same page succeeds
+# without any issue. Spacing requests out and reusing one Session (below)
+# so cookies persist across requests makes this look much more like normal
+# browsing and much less like a scraper.
+MIN_HOST_INTERVAL_SECONDS = 2.5
 
 ERROR_NOTIFY_THRESHOLD = 2   # consecutive failures before alerting
 HEARTBEAT_DAYS = 7           # "still alive" confirmation every N days
@@ -112,23 +125,49 @@ def clean_text(text):
 # HTTP
 # --------------------------------------------------------------------------
 
+# One shared session for the whole run: connections are pooled/kept-alive
+# and, importantly, cookies a site sets on the first request (session id,
+# CSRF/verification tokens, ...) are carried over to the next request to
+# the same host instead of every fetch looking like a brand-new, cookie-less
+# visitor.
+SESSION = requests.Session()
+SESSION.headers.update({
+    "User-Agent": USER_AGENT,
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+    "Accept-Language": "it-IT,it;q=0.9",
+})
+
+_last_request_at = {}  # hostname -> time.monotonic() of the last request sent
+
+
+def _throttle_for_host(host):
+    last = _last_request_at.get(host)
+    now = time.monotonic()
+    if last is not None:
+        wait = MIN_HOST_INTERVAL_SECONDS - (now - last)
+        if wait > 0:
+            time.sleep(wait)
+    _last_request_at[host] = time.monotonic()
+
+
 def fetch_html(url):
     """Downloads a page with retry logic. Returns (html, final_url)."""
+    host = urlsplit(url).netloc
     last_error = None
     for attempt in range(1, MAX_RETRIES + 1):
+        _throttle_for_host(host)
         try:
-            resp = requests.get(
-                url,
-                headers={"User-Agent": USER_AGENT, "Accept-Language": "it-IT,it;q=0.9"},
-                timeout=REQUEST_TIMEOUT,
-            )
+            resp = SESSION.get(url, timeout=REQUEST_TIMEOUT)
             resp.raise_for_status()
             resp.encoding = resp.encoding or "utf-8"
             return resp.text, resp.url
         except requests.RequestException as exc:
             last_error = exc
             if attempt < MAX_RETRIES:
-                time.sleep(RETRY_DELAY_SECONDS)
+                # Back off a bit more on each retry instead of a fixed
+                # delay, to ease off further if the previous attempt's
+                # failure was itself a sign of throttling.
+                time.sleep(RETRY_DELAY_SECONDS * attempt)
     raise RuntimeError(f"unreachable after {MAX_RETRIES} attempts: {last_error}")
 
 
