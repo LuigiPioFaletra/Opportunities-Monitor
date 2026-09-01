@@ -1,0 +1,82 @@
+name: Diagnose network reachability (politichegiovanili.gov.it)
+
+# One-off diagnostic workflow, separate from the main monitor.yml on
+# purpose: it never runs on a schedule, only when triggered manually from
+# the Actions tab ("Run workflow"). It exists to confirm - with hard
+# evidence in the logs - whether www.politichegiovanili.gov.it (and
+# scelgoilserviziocivile.gov.it) is unreachable specifically from
+# GitHub-hosted runner IPs, before building any fix around that
+# assumption. Safe to delete once the question is answered.
+
+on:
+  workflow_dispatch:
+
+jobs:
+  diagnose:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Runner outbound IP and network owner
+        run: |
+          echo "=== Public IP of this runner ==="
+          curl -s https://ifconfig.me; echo
+          echo
+          echo "=== IP details (owner/ASN) ==="
+          curl -s https://ipinfo.io || true
+          echo
+
+      - name: DNS resolution
+        run: |
+          for host in www.politichegiovanili.gov.it scelgoilserviziocivile.gov.it uke.it cl-en.usr.sicilia.it; do
+            echo "=== $host ==="
+            getent hosts "$host" || echo "(resolution failed)"
+            echo
+          done
+
+      - name: Raw TCP connect test on port 443
+        # This is the key test: it isolates whether the block happens at
+        # the TCP layer (no SYN-ACK at all, matching the ConnectTimeoutError
+        # seen in monitor.py) versus something higher up (TLS/HTTP).
+        # uke.it and cl-en.usr.sicilia.it are included as "known good"
+        # controls, since the monitor reaches them without issues.
+        run: |
+          for host in www.politichegiovanili.gov.it scelgoilserviziocivile.gov.it uke.it cl-en.usr.sicilia.it; do
+            echo "=== TCP connect to $host:443 ==="
+            if timeout 10 bash -c "cat < /dev/null > /dev/tcp/$host/443" 2>/tmp/tcp_err; then
+              echo "OK: TCP handshake succeeded"
+            else
+              echo "FAILED: $(cat /tmp/tcp_err)"
+            fi
+            echo
+          done
+
+      - name: Verbose curl with per-phase timing
+        # time_connect is the number that matters here: if it never
+        # completes (curl exits on --connect-timeout before printing a
+        # value) for politichegiovanili.gov.it while it's near-instant for
+        # the control domains below, that is a TCP/network-level block on
+        # this runner's source IP, not an application-level one.
+        run: |
+          for url in "https://www.politichegiovanili.gov.it/" "https://scelgoilserviziocivile.gov.it/" "https://uke.it/" "https://cl-en.usr.sicilia.it/"; do
+            echo "############################################################"
+            echo "=== $url ==="
+            curl -v --connect-timeout 15 --max-time 25 \
+              -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" \
+              -H "Accept-Language: it-IT,it;q=0.9" \
+              -w "\n---\nnamelookup=%{time_namelookup}s connect=%{time_connect}s appconnect=%{time_appconnect}s starttransfer=%{time_starttransfer}s total=%{time_total}s http_code=%{http_code}\n" \
+              -o /dev/null "$url" 2>&1
+            echo
+          done
+
+      - name: Traceroute to target vs. control host (best effort)
+        # ICMP/UDP traceroute is often filtered and may show mostly "*",
+        # but a clean run to uke.it that stops dead a few hops before
+        # reaching politichegiovanili.gov.it's network is still useful
+        # signal, so it's worth capturing even if partial.
+        run: |
+          sudo apt-get update -y >/dev/null 2>&1 || true
+          sudo apt-get install -y traceroute >/dev/null 2>&1 || true
+          for host in www.politichegiovanili.gov.it uke.it; do
+            echo "=== traceroute (TCP/443) to $host ==="
+            traceroute -T -p 443 -w 2 -m 15 "$host" 2>&1 || echo "traceroute unavailable or failed"
+            echo
+          done
