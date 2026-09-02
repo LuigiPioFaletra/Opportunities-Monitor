@@ -409,9 +409,20 @@ def check_one(source, state):
     old_entry = state.get(source_id)
     checker = CHECKERS[source["type"]]
 
+    # Some hosts (politichegiovanili.gov.it and its scelgoilserviziocivile.gov.it
+    # companion) are known to fail intermittently for reasons outside our
+    # control: GitHub-hosted runners share a large, rotating pool of IPs, and
+    # if that host's WAF/anti-bot has one of those IPs greylisted, whichever
+    # run happens to draw it will fail even though the site itself is fine.
+    # A per-source override lets flaky hosts require more consecutive failed
+    # *scheduled runs* (not retries within one run - those already happen
+    # inside fetch_html) before we bother Luigi with an alert, while other,
+    # well-behaved sources keep the tighter default threshold.
+    threshold = source.get("error_notify_threshold", ERROR_NOTIFY_THRESHOLD)
+
     try:
         new_entry, event = checker(source, old_entry)
-        was_erroring = bool(old_entry and old_entry.get("consecutive_errors", 0) >= ERROR_NOTIFY_THRESHOLD)
+        was_erroring = bool(old_entry and old_entry.get("consecutive_errors", 0) >= threshold)
         if was_erroring and event is None:
             event = {"type": "recovered", "label": source["label"]}
         state[source_id] = new_entry
@@ -423,7 +434,7 @@ def check_one(source, state):
         entry["consecutive_errors"] = consecutive
         entry["last_error"] = str(exc)
         entry["checked"] = now_iso()
-        should_notify = consecutive >= ERROR_NOTIFY_THRESHOLD and not error_notified
+        should_notify = consecutive >= threshold and not error_notified
         if should_notify:
             entry["error_notified"] = True
         state[source_id] = entry
