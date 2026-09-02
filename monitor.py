@@ -139,6 +139,25 @@ SESSION.headers.update({
 
 _last_request_at = {}  # hostname -> time.monotonic() of the last request sent
 
+# GitHub-hosted runners draw from a large, rotating pool of shared IPs, so
+# whether a given host blocks us or not can depend entirely on which IP this
+# particular run happened to get - not on anything about the target site or
+# our code. Fetching it once per run and embedding it in error messages
+# means every future "unreachable" alert already carries the one piece of
+# evidence needed to correlate failures with specific IPs/ASNs over time,
+# without having to catch a failure with a manually-triggered diagnostic run.
+_runner_ip_cache = None
+
+
+def get_runner_ip():
+    global _runner_ip_cache
+    if _runner_ip_cache is None:
+        try:
+            _runner_ip_cache = requests.get("https://ifconfig.me", timeout=10).text.strip()
+        except requests.RequestException:
+            _runner_ip_cache = "sconosciuto"
+    return _runner_ip_cache
+
 
 def _throttle_for_host(host):
     last = _last_request_at.get(host)
@@ -168,7 +187,10 @@ def fetch_html(url):
                 # delay, to ease off further if the previous attempt's
                 # failure was itself a sign of throttling.
                 time.sleep(RETRY_DELAY_SECONDS * attempt)
-    raise RuntimeError(f"unreachable after {MAX_RETRIES} attempts: {last_error}")
+    raise RuntimeError(
+        f"unreachable after {MAX_RETRIES} attempts from runner IP "
+        f"{get_runner_ip()}: {last_error}"
+    )
 
 
 # --------------------------------------------------------------------------
