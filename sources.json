@@ -39,26 +39,30 @@
     "label": "Politiche Giovanili - Avvisi e bandi",
     "type": "listing",
     "url": "https://www.politichegiovanili.gov.it/comunicazione/avvisi-e-bandi/",
-    "check_degree_class": false
+    "check_degree_class": false,
+    "error_notify_threshold": 4
   },
   {
     "id": "pg_sc_avvisi_presentazione_progetti",
     "label": "Servizio Civile - Avvisi presentazione programmi e progetti",
     "type": "listing",
     "url": "https://www.politichegiovanili.gov.it/servizio-civile/bandi-e-avvisi-di-servizio-civile/avvisi-di-presentazione-programmi-e-progetti/",
-    "check_degree_class": false
+    "check_degree_class": false,
+    "error_notify_threshold": 4
   },
   {
     "id": "pg_sc_bandi_selezione_volontari",
     "label": "Servizio Civile - Bandi di selezione volontari",
     "type": "listing",
     "url": "https://www.politichegiovanili.gov.it/servizio-civile/bandi-e-avvisi-di-servizio-civile/bandi-di-selezione-volontari/",
-    "check_degree_class": false
+    "check_degree_class": false,
+    "error_notify_threshold": 4
   },
   {
     "id": "pg_sc_site_scan",
     "label": "Servizio Civile - Scansione siti per nuovi bandi",
     "type": "keyword_scan",
+    "error_notify_threshold": 4,
     "hub_urls": [
       "https://www.politichegiovanili.gov.it/",
       "https://www.politichegiovanili.gov.it/comunicazione/avvisi-e-bandi/",
