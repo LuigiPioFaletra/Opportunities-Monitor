@@ -1,37 +1,37 @@
 {
   "pg_avvisi_e_bandi": {
-    "checked": "2026-09-01T20:11:46.384174+00:00",
-    "consecutive_errors": 1,
-    "error_notified": false,
+    "checked": "2026-09-02T08:21:19.470052+00:00",
+    "consecutive_errors": 2,
+    "error_notified": true,
     "hash": "84eb9b84a063075c40c9396d2c60e8133dabaca1750aa93bb868ef3fb18c3791",
     "items": {
       "https://www.politichegiovanili.gov.it/comunicazione/avvisi-e-bandi/politiche-giovanili/maninteresse_cgn_2026/": "Bandi attivi"
     },
-    "last_error": "unreachable after 3 attempts: HTTPSConnectionPool(host='www.politichegiovanili.gov.it', port=443): Max retries exceeded with url: /comunicazione/avvisi-e-bandi/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.politichegiovanili.gov.it', port=443) at 0x7fd9f3750860>, 'Connection to www.politichegiovanili.gov.it timed out. (connect timeout=30)'))"
+    "last_error": "unreachable after 3 attempts: HTTPSConnectionPool(host='www.politichegiovanili.gov.it', port=443): Max retries exceeded with url: /comunicazione/avvisi-e-bandi/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.politichegiovanili.gov.it', port=443) at 0x7f21197599d0>, 'Connection to www.politichegiovanili.gov.it timed out. (connect timeout=30)'))"
   },
   "pg_sc_avvisi_presentazione_progetti": {
-    "checked": "2026-09-01T20:13:32.826428+00:00",
-    "consecutive_errors": 1,
-    "error_notified": false,
+    "checked": "2026-09-02T08:23:04.739233+00:00",
+    "consecutive_errors": 2,
+    "error_notified": true,
     "hash": "c841bbe0ad58c13981e7c323352bcaf2c6597ec9a2ecb0842419f0cd2818e5f3",
     "items": {
       "http://www.gazzettaufficiale.it/": "Bandi attivi",
       "https://www.politichegiovanili.gov.it/comunicazione/avvisi-e-bandi/servizio-civile/avvisi-di-presentazione-programmi-e-progetti/2026_avvisopresentazioneprogrammi/": "Vai al bando"
     },
-    "last_error": "unreachable after 3 attempts: HTTPSConnectionPool(host='www.politichegiovanili.gov.it', port=443): Max retries exceeded with url: /servizio-civile/bandi-e-avvisi-di-servizio-civile/avvisi-di-presentazione-programmi-e-progetti/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.politichegiovanili.gov.it', port=443) at 0x7fd9f3751f40>, 'Connection to www.politichegiovanili.gov.it timed out. (connect timeout=30)'))"
+    "last_error": "unreachable after 3 attempts: HTTPSConnectionPool(host='www.politichegiovanili.gov.it', port=443): Max retries exceeded with url: /servizio-civile/bandi-e-avvisi-di-servizio-civile/avvisi-di-presentazione-programmi-e-progetti/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.politichegiovanili.gov.it', port=443) at 0x7f2119731520>, 'Connection to www.politichegiovanili.gov.it timed out. (connect timeout=30)'))"
   },
   "pg_sc_bandi_selezione_volontari": {
-    "checked": "2026-09-01T20:15:19.424883+00:00",
-    "consecutive_errors": 1,
-    "error_notified": false,
+    "checked": "2026-09-02T08:24:51.500049+00:00",
+    "consecutive_errors": 2,
+    "error_notified": true,
     "hash": "d62dc26edee35470ec0beb6e9ae2a422e13af21e511f74c1bab0a32bd5040684",
     "items": {
       "http://www.gazzettaufficiale.it/": "Bandi attivi"
     },
-    "last_error": "unreachable after 3 attempts: HTTPSConnectionPool(host='www.politichegiovanili.gov.it', port=443): Max retries exceeded with url: /servizio-civile/bandi-e-avvisi-di-servizio-civile/bandi-di-selezione-volontari/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.politichegiovanili.gov.it', port=443) at 0x7fd9f3751430>, 'Connection to www.politichegiovanili.gov.it timed out. (connect timeout=30)'))"
+    "last_error": "unreachable after 3 attempts: HTTPSConnectionPool(host='www.politichegiovanili.gov.it', port=443): Max retries exceeded with url: /servizio-civile/bandi-e-avvisi-di-servizio-civile/bandi-di-selezione-volontari/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.politichegiovanili.gov.it', port=443) at 0x7f2119732db0>, 'Connection to www.politichegiovanili.gov.it timed out. (connect timeout=30)'))"
   },
   "pg_sc_site_scan": {
-    "checked": "2026-09-01T20:27:43.723294+00:00",
+    "checked": "2026-09-02T08:37:14.120744+00:00",
     "consecutive_errors": 0,
     "error_notified": false,
     "hash": "171e1631f2e63c85e4da5e00c68f2bf05a2ed8f0c0c094fa54251e1e32a772bf",
@@ -51,36 +51,36 @@
     },
     "last_error": null,
     "partial_errors": [
-      "https://www.politichegiovanili.gov.it/: unreachable after 3 attempts: HTTPSConnectionPool(host='www.politichegiovanili.gov.it', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.politichegiovanili.gov.it', port=443) at 0x7fd9f3717ec0>, 'Connection to www.politichegiovanili.gov.it timed out. (connect timeout=30)'))",
-      "https://www.politichegiovanili.gov.it/comunicazione/avvisi-e-bandi/: unreachable after 3 attempts: HTTPSConnectionPool(host='www.politichegiovanili.gov.it', port=443): Max retries exceeded with url: /comunicazione/avvisi-e-bandi/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.politichegiovanili.gov.it', port=443) at 0x7fd9f3751e20>, 'Connection to www.politichegiovanili.gov.it timed out. (connect timeout=30)'))",
-      "https://www.politichegiovanili.gov.it/comunicazione/news/: unreachable after 3 attempts: HTTPSConnectionPool(host='www.politichegiovanili.gov.it', port=443): Max retries exceeded with url: /comunicazione/news/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.politichegiovanili.gov.it', port=443) at 0x7fd9f37507a0>, 'Connection to www.politichegiovanili.gov.it timed out. (connect timeout=30)'))",
-      "https://www.politichegiovanili.gov.it/servizio-civile/: unreachable after 3 attempts: HTTPSConnectionPool(host='www.politichegiovanili.gov.it', port=443): Max retries exceeded with url: /servizio-civile/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.politichegiovanili.gov.it', port=443) at 0x7fd9f376d670>, 'Connection to www.politichegiovanili.gov.it timed out. (connect timeout=30)'))",
-      "https://www.politichegiovanili.gov.it/servizio-civile/bandi-e-avvisi-di-servizio-civile/: unreachable after 3 attempts: HTTPSConnectionPool(host='www.politichegiovanili.gov.it', port=443): Max retries exceeded with url: /servizio-civile/bandi-e-avvisi-di-servizio-civile/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.politichegiovanili.gov.it', port=443) at 0x7fd9f3717500>, 'Connection to www.politichegiovanili.gov.it timed out. (connect timeout=30)'))",
-      "https://www.politichegiovanili.gov.it/servizio-civile/bandi-e-avvisi-di-servizio-civile/avvisi-di-presentazione-programmi-e-progetti/: unreachable after 3 attempts: HTTPSConnectionPool(host='www.politichegiovanili.gov.it', port=443): Max retries exceeded with url: /servizio-civile/bandi-e-avvisi-di-servizio-civile/avvisi-di-presentazione-programmi-e-progetti/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.politichegiovanili.gov.it', port=443) at 0x7fd9f376fda0>, 'Connection to www.politichegiovanili.gov.it timed out. (connect timeout=30)'))",
-      "https://www.politichegiovanili.gov.it/servizio-civile/bandi-e-avvisi-di-servizio-civile/bandi-di-selezione-volontari/: unreachable after 3 attempts: HTTPSConnectionPool(host='www.politichegiovanili.gov.it', port=443): Max retries exceeded with url: /servizio-civile/bandi-e-avvisi-di-servizio-civile/bandi-di-selezione-volontari/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.politichegiovanili.gov.it', port=443) at 0x7fd9f376f3e0>, 'Connection to www.politichegiovanili.gov.it timed out. (connect timeout=30)'))"
+      "https://www.politichegiovanili.gov.it/: unreachable after 3 attempts: HTTPSConnectionPool(host='www.politichegiovanili.gov.it', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.politichegiovanili.gov.it', port=443) at 0x7f2119733650>, 'Connection to www.politichegiovanili.gov.it timed out. (connect timeout=30)'))",
+      "https://www.politichegiovanili.gov.it/comunicazione/avvisi-e-bandi/: unreachable after 3 attempts: HTTPSConnectionPool(host='www.politichegiovanili.gov.it', port=443): Max retries exceeded with url: /comunicazione/avvisi-e-bandi/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.politichegiovanili.gov.it', port=443) at 0x7f2119732750>, 'Connection to www.politichegiovanili.gov.it timed out. (connect timeout=30)'))",
+      "https://www.politichegiovanili.gov.it/comunicazione/news/: unreachable after 3 attempts: HTTPSConnectionPool(host='www.politichegiovanili.gov.it', port=443): Max retries exceeded with url: /comunicazione/news/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.politichegiovanili.gov.it', port=443) at 0x7f2119731970>, 'Connection to www.politichegiovanili.gov.it timed out. (connect timeout=30)'))",
+      "https://www.politichegiovanili.gov.it/servizio-civile/: unreachable after 3 attempts: HTTPSConnectionPool(host='www.politichegiovanili.gov.it', port=443): Max retries exceeded with url: /servizio-civile/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.politichegiovanili.gov.it', port=443) at 0x7f2119730530>, 'Connection to www.politichegiovanili.gov.it timed out. (connect timeout=30)'))",
+      "https://www.politichegiovanili.gov.it/servizio-civile/bandi-e-avvisi-di-servizio-civile/: unreachable after 3 attempts: HTTPSConnectionPool(host='www.politichegiovanili.gov.it', port=443): Max retries exceeded with url: /servizio-civile/bandi-e-avvisi-di-servizio-civile/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.politichegiovanili.gov.it', port=443) at 0x7f21197321b0>, 'Connection to www.politichegiovanili.gov.it timed out. (connect timeout=30)'))",
+      "https://www.politichegiovanili.gov.it/servizio-civile/bandi-e-avvisi-di-servizio-civile/avvisi-di-presentazione-programmi-e-progetti/: unreachable after 3 attempts: HTTPSConnectionPool(host='www.politichegiovanili.gov.it', port=443): Max retries exceeded with url: /servizio-civile/bandi-e-avvisi-di-servizio-civile/avvisi-di-presentazione-programmi-e-progetti/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.politichegiovanili.gov.it', port=443) at 0x7f211977f320>, 'Connection to www.politichegiovanili.gov.it timed out. (connect timeout=30)'))",
+      "https://www.politichegiovanili.gov.it/servizio-civile/bandi-e-avvisi-di-servizio-civile/bandi-di-selezione-volontari/: unreachable after 3 attempts: HTTPSConnectionPool(host='www.politichegiovanili.gov.it', port=443): Max retries exceeded with url: /servizio-civile/bandi-e-avvisi-di-servizio-civile/bandi-di-selezione-volontari/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.politichegiovanili.gov.it', port=443) at 0x7f211977ec30>, 'Connection to www.politichegiovanili.gov.it timed out. (connect timeout=30)'))"
     ]
   },
   "supplenze_convocazioni": {
-    "checked": "2026-09-01T20:27:44.797802+00:00",
+    "checked": "2026-09-02T08:37:15.274407+00:00",
     "consecutive_errors": 0,
     "error_notified": false,
-    "hash": "7874f8d2301028a2977b27e08c30c472e3f7584a4bf1eed88fec08610a5340ac",
+    "hash": "f7078feeff72547ff3b1952352cfcc920f9772133cde0fc3c1f3c6bff334f523",
     "items": {
       "https://cl-en.usr.sicilia.it/assegnazione-sede-docenti-beneficiari-precedenza-ex-art-art-17-legge-28-07-1999-n-266/": "Assegnazione sede docenti beneficiari precedenza ex art. art. 17 legge 28/07/1999 n. 266",
+      "https://cl-en.usr.sicilia.it/calcagno-gaetano-decreto-di-esclusione-gps-per-la-classe-di-concorso-a043-seconda-fascia-provincia-di-caltanissetta/": "Calcagno Gaetano. Decreto di esclusione GPS per la classe di concorso A043, seconda fascia provincia di Caltanissetta",
       "https://cl-en.usr.sicilia.it/conferimento-incarichi-a-tempo-determinato-continuita-dei-docenti-a-tempo-determinato-su-posto-di-sostegno-per-lanno-scolastico-2026-2027/": "Conferimento incarichi a tempo determinato – continuità dei docenti a tempo determinato su posto di sostegno per l’anno scolastico 2026/2027",
       "https://cl-en.usr.sicilia.it/decreto-scambio-consensuale-coniugi-bonvissuto-massimo-sicurezza-maria-as-2026-2027/": "DECRETO SCAMBIO CONSENSUALE CONIUGI- Bonvissuto Massimo – Sicurezza Maria- AS 2026/2027",
       "https://cl-en.usr.sicilia.it/gae-e-gps-conferimento-incarichi-a-tempo-determinato-a-s-2026-2027-i-turno/": "GAE e GPS- Conferimento incarichi a tempo determinato A.S. 2026/2027- I° TURNO",
       "https://cl-en.usr.sicilia.it/gae-e-gps-conferimento-incarichi-a-tempo-determinato-a-s-2026-2027-precisazioni-per-gli-aspiranti-e-per-le-scuole/": "GAE E GPS- CONFERIMENTO INCARICHI A TEMPO DETERMINATO A.S. 2026/2027- Precisazioni per gli aspiranti e per le scuole",
       "https://cl-en.usr.sicilia.it/pubblicazione-disponibilita-per-contratti-a-tempo-determinato-a-s-2026-2027-posti-comuni-e-di-sostegno-scuola-dellinfanzia-scuola-primaria-e-scuola-secondaria-di-primo-e-di-secondo-grado/": "Pubblicazione disponibilità per contratti a tempo determinato – a.s. 2026/2027- posti comuni e di sostegno scuola dell’infanzia, scuola primaria e scuola secondaria di primo e di secondo grado",
       "https://cl-en.usr.sicilia.it/rettifica-assegnazioni-interprovinciali-personale-docente-scuola-primaria-provincia-di-caltanissetta/": "Rettifica assegnazioni interprovinciali personale docente scuola primaria – provincia di Caltanissetta",
-      "https://cl-en.usr.sicilia.it/rettifica-assegnazioni-provvisorie-interprovinciali-a046-e-adss-provincia-di-caltanissetta/": "Rettifica Assegnazioni Provvisorie Interprovinciali A046 e ADSS – Provincia di Caltanissetta",
       "https://cl-en.usr.sicilia.it/ripubblicazione-graduatorie-provinciali-per-le-supplenze-biennio-2026-27-e-2027-28-province-di-caltanissetta-ed-enna/": "Ripubblicazione Graduatorie Provinciali per le Supplenze Biennio 2026/27 e 2027/28 – Province di Caltanissetta ed Enna",
       "https://cl-en.usr.sicilia.it/seconda-rettifica-assegnazioni-provvisorie-adss-provincia-di-enna/": "Seconda rettifica Assegnazioni provvisorie ADSS– Provincia di Enna"
     },
     "last_error": null
   },
   "uke_dottorati": {
-    "checked": "2026-09-01T20:09:50.923828+00:00",
+    "checked": "2026-09-02T08:19:23.405512+00:00",
     "consecutive_errors": 0,
     "error_notified": false,
     "hash": "1bd3ca28ab781ef9d1381d01199d6c244aa75357119afb1fd31240b9968c28f4",
@@ -203,7 +203,7 @@
     "last_error": null
   },
   "uke_lavoro_altre_figure": {
-    "checked": "2026-09-01T20:09:57.538994+00:00",
+    "checked": "2026-09-02T08:19:31.545471+00:00",
     "consecutive_errors": 0,
     "error_notified": false,
     "hash": "69fd479eb50e709e4475a252fae1f311d76dd7283bab1fb43e88e70a95b3af71",
@@ -213,7 +213,7 @@
     "last_error": null
   },
   "uke_lavoro_docenti_a_contratto": {
-    "checked": "2026-09-01T20:09:55.157492+00:00",
+    "checked": "2026-09-02T08:19:29.127499+00:00",
     "consecutive_errors": 0,
     "error_notified": false,
     "hash": "5147f5e7aedb5c52f0607fe521074db0027025df36478fcebf86365932798fe2",
@@ -223,7 +223,7 @@
     "last_error": null
   },
   "uke_lavoro_opportunita_studenti": {
-    "checked": "2026-09-01T20:10:00.087250+00:00",
+    "checked": "2026-09-02T08:19:34.066412+00:00",
     "consecutive_errors": 0,
     "error_notified": false,
     "hash": "cc7ce8ff30b72a6a015f30831415598794e842f2116edbc162d7688f9703c577",
@@ -233,7 +233,7 @@
     "last_error": null
   },
   "uke_lavoro_professori_ricercatori": {
-    "checked": "2026-09-01T20:09:52.483445+00:00",
+    "checked": "2026-09-02T08:19:26.816582+00:00",
     "consecutive_errors": 0,
     "error_notified": false,
     "hash": "3d9789439e26f1bdce11a0ada67712c0dadcc6cc296310762f495a5ee779ceb2",
