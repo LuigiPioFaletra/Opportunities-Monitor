@@ -55,6 +55,13 @@ jobs:
         # value) for politichegiovanili.gov.it while it's near-instant for
         # the control domains below, that is a TCP/network-level block on
         # this runner's source IP, not an application-level one.
+        #
+        # curl exits non-zero on a timeout (that is the whole point of this
+        # test - we *expect* it to happen sometimes), and this step's shell
+        # runs with `set -e` by default, so without "|| true" a single
+        # timed-out host would kill the step and skip every URL after it in
+        # the loop. Appending "|| true" lets the loop keep going through
+        # all four hosts regardless of what happens with the ones before.
         run: |
           for url in "https://www.politichegiovanili.gov.it/" "https://scelgoilserviziocivile.gov.it/" "https://uke.it/" "https://cl-en.usr.sicilia.it/"; do
             echo "############################################################"
@@ -63,7 +70,7 @@ jobs:
               -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" \
               -H "Accept-Language: it-IT,it;q=0.9" \
               -w "\n---\nnamelookup=%{time_namelookup}s connect=%{time_connect}s appconnect=%{time_appconnect}s starttransfer=%{time_starttransfer}s total=%{time_total}s http_code=%{http_code}\n" \
-              -o /dev/null "$url" 2>&1
+              -o /dev/null "$url" 2>&1 || true
             echo
           done
 
