@@ -88,6 +88,29 @@ SKIP_HREF_MARKERS = (
     "play.google.com", "apps.apple.com", "wa.me", "whatsapp.com",
 )
 
+# AsmeLab (asmelab.it) publishes its "interpelli" (calls to fill a post from
+# the ASMEL elenchi di idonei) as a small dhtmlx grid on the homepage. The
+# grid's data comes from a plain GET endpoint that returns an XML feed and
+# accepts the same filters as the on-page search boxes (campo1..campo5 map
+# to ENTE/REGIONE/PROFILO/APERTURA/CHIUSURA left to right). This lets the
+# feed be queried already filtered server-side (campo2=<regione>) instead of
+# downloading every interpello nationwide.
+#
+# The endpoint always returns a fixed 12 rows per page regardless of the
+# requested RecordXPage value (verified by requesting RecordXPage=500 and
+# still getting 12 rows back), so pages have to be walked one at a time
+# using the "page"/"prima" parameters until the "pagGrid" total reported in
+# the feed itself is reached.
+ASMELAB_XML_URL = "https://www.asmelab.it/anagrafiche/brInterpelliHomeXML.php"
+ASMELAB_RECORDS_PER_PAGE = 12
+ASMELAB_MAX_PAGES_SAFETY = 80  # hard stop in case pagGrid is ever wrong/missing
+ASMELAB_COMUNI_PROVINCIA_FILE = os.path.join(BASE_DIR, "sicily_municipality_provinces.json")
+
+ASMELAB_ROW_RE = re.compile(r'<row id="([^"]*)">(.*?)</row>', re.DOTALL)
+ASMELAB_CELL_RE = re.compile(r"<cell[^>]*>\s*<!\[CDATA\[(.*?)\]\]>\s*</cell>", re.DOTALL)
+ASMELAB_LINK_RE = re.compile(r"foo\('([^']+)'\)")
+ASMELAB_PAGGRID_RE = re.compile(r'<userdata name="pagGrid">\s*(\d+)\s*</userdata>')
+
 
 # --------------------------------------------------------------------------
 # Small utilities
@@ -420,9 +443,111 @@ def check_keyword_scan_source(source, old_entry):
     return new_entry, event
 
 
+_asmelab_comuni_provincia_cache = None
+
+
+def _asmelab_comuni_provincia():
+    """comune (uppercase) -> province abbreviation, for every Sicilian
+    comune. Loaded once from sicily_municipality_provinces.json (built from the
+    public ISTAT-derived comuni-json dataset, so accents/apostrophes match
+    the official comune names AsmeLab itself uses)."""
+    global _asmelab_comuni_provincia_cache
+    if _asmelab_comuni_provincia_cache is None:
+        _asmelab_comuni_provincia_cache = load_json(ASMELAB_COMUNI_PROVINCIA_FILE, {})
+    return _asmelab_comuni_provincia_cache
+
+
+def fetch_asmelab_interpelli(region_filter):
+    """Fetches every interpello row from AsmeLab's public XML feed, already
+    filtered server-side by REGIONE. Returns {row_id: item_dict}."""
+    items = {}
+    page = 1
+    total_pages = None
+    while True:
+        prima = (page - 1) * ASMELAB_RECORDS_PER_PAGE + 1
+        url = (
+            f"{ASMELAB_XML_URL}?prima={prima}&page={page}"
+            f"&RecordXPage={ASMELAB_RECORDS_PER_PAGE}"
+            f"&campo1=&campo2={region_filter}&campo3=&campo4=&campo5=&order="
+        )
+        xml_text, _ = fetch_html(url)
+
+        if total_pages is None:
+            match = ASMELAB_PAGGRID_RE.search(xml_text)
+            total_pages = int(match.group(1)) if match else page
+
+        rows = ASMELAB_ROW_RE.findall(xml_text)
+        if not rows:
+            break
+        for row_id, body in rows:
+            cells = [clean_text(c) for c in ASMELAB_CELL_RE.findall(body)]
+            if not row_id or len(cells) < 7:
+                continue
+            comune, regione, profilo, apertura, chiusura, stato, bando_cell = cells[:7]
+            link_match = ASMELAB_LINK_RE.search(bando_cell)
+            items[row_id] = {
+                "comune": comune,
+                "regione": regione,
+                "profilo": profilo,
+                "apertura": apertura,
+                "chiusura": chiusura,
+                "stato": stato,
+                "link": link_match.group(1) if link_match else "https://www.asmelab.it/",
+            }
+
+        if page >= total_pages or page >= ASMELAB_MAX_PAGES_SAFETY:
+            break
+        page += 1
+    return items
+
+
+def check_asmelab_interpelli_source(source, old_entry):
+    items = fetch_asmelab_interpelli(source["region_filter"])
+    comuni_provincia = _asmelab_comuni_provincia()
+
+    old_items = (old_entry or {}).get("items", {}) if old_entry else {}
+    is_cold_start = old_entry is None
+    added_ids = [i for i in items if i not in old_items]
+
+    new_entry = {
+        "items": items,
+        "hash": digest(sorted(items.items())),
+        "checked": now_iso(),
+        "consecutive_errors": 0,
+        "error_notified": False,
+        "last_error": None,
+    }
+
+    highlight_profile = (source.get("highlight_profile") or "").upper().strip()
+
+    event = None
+    if not is_cold_start and added_ids:
+        added = []
+        for row_id in added_ids:
+            it = items[row_id]
+            provincia = comuni_provincia.get(it["comune"].upper())
+            comune_label = f"{it['comune']} ({provincia})" if provincia else it["comune"]
+            is_match = bool(highlight_profile) and highlight_profile in it["profilo"].upper()
+            marker = "⭐ TUO PROFILO - " if is_match else ""
+            title = f"{marker}{comune_label} - {it['profilo']}"
+            flags = [f"{it['stato']}, chiude {it['chiusura']}"]
+            added.append((it["link"], title, flags, is_match))
+        # Interpelli for the candidate's own profile are surfaced first, so
+        # they don't get buried in a long batch of unrelated ones.
+        added.sort(key=lambda entry: not entry[3])
+        added = [entry[:3] for entry in added]
+        event = {
+            "type": "update",
+            "label": source["label"],
+            "added": added,
+        }
+    return new_entry, event
+
+
 CHECKERS = {
     "listing": check_listing_source,
     "keyword_scan": check_keyword_scan_source,
+    "asmelab_interpelli": check_asmelab_interpelli_source,
 }
 
 
