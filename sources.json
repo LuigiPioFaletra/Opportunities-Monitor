@@ -91,5 +91,13 @@
     "url": "https://cl-en.usr.sicilia.it/personale-scuola/personale-docente/reclutamento-docenti/",
     "check_degree_class": false,
     "enabled": true
+  },
+  {
+    "id": "asmelab_interpelli_sicilia",
+    "label": "AsmeLab - Interpelli elenchi idonei (Sicilia)",
+    "type": "asmelab_interpelli",
+    "region_filter": "sicilia",
+    "highlight_profile": "FUNZIONARIO INFORMATICO",
+    "enabled": true
   }
 ]
