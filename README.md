@@ -51,6 +51,34 @@ edited without touching the code:
   supplenze, ...) without requiring login. That page is paginated (10
   items per page); the monitor only reads the first page, which is where
   new notices appear, so this is by design and not a bug.
+- **AsmeLab - Interpelli elenchi idonei** (`asmelab_interpelli_sicilia`):
+  AsmeLab (asmelab.it) publishes "interpelli" - individual municipalities
+  drawing candidates from the national ASMEL elenchi di idonei - as a small
+  grid on its homepage (ENTE / REGIONE / PROFILO / APERTURA / CHIUSURA /
+  STATO / BANDO). That grid is fed by a plain, unauthenticated XML endpoint
+  (`anagrafiche/brInterpelliHomeXML.php`) that accepts the same filters as
+  the on-page search boxes, so this source queries it already filtered to
+  `REGIONE=Sicilia` server-side (`region_filter` in `sources.json`) instead
+  of pulling every interpello nationwide. New rows are matched against
+  `sicily_municipality_provinces.json` (a comune -> province-abbreviation lookup
+  for all 390 Sicilian comuni) so the Telegram message can show, per new
+  interpello, the comune with its province and the profile being sought
+  (e.g. "BOMPIETRO (PA) - ISTRUTTORE DI VIGILANZA ex Cat. C"), plus its
+  status and closing date, with the announcement link taken from the
+  grid's own "LEGGI" entry. If `highlight_profile` is set (a case-insensitive
+  substring match against PROFILO, e.g. "FUNZIONARIO INFORMATICO"), any new
+  interpello for that profile is prefixed with "⭐ TUO PROFILO -" and sorted
+  to the top of the message, so it doesn't get lost in a batch of unrelated
+  interpelli for other profiles.
+
+  Being added to AsmeLab's elenchi di idonei does not mean an
+  administration will reach out on its own: for each interpello a
+  municipality opens, ASMEL sends a PEC to everyone on the relevant elenco,
+  but it's on the candidate to actively submit an application within 15
+  days of that PEC (login with SPID/CIE on asmelab.it, section "Elenco
+  Interpelli"). This source exists precisely to catch a newly-opened
+  Sicilian interpello as soon as it appears, as a backup to watching for
+  the PEC itself.
 
 ## How it works
 
@@ -129,11 +157,20 @@ needed for another "listing" page. Each entry supports:
 |----------------------|------------------------------------------------------------------------|
 | `id`                 | Stable identifier, used as the key in `state.json`. Don't change it once the monitor is live, or it will be treated as a brand-new source. |
 | `label`              | Human-readable name shown in Telegram messages.                      |
-| `type`               | `listing` or `keyword_scan`.                                         |
+| `type`               | `listing`, `keyword_scan` or `asmelab_interpelli`.                    |
 | `url`                | Page to fetch (`listing` only).                                      |
 | `hub_urls`/`keywords`| Pages to scan and keyword list (`keyword_scan` only).                |
 | `check_degree_class` | If `true`, newly found items are opened and scanned for `L-8`/`LM-32` (`listing` only). |
+| `region_filter`      | Region name passed to AsmeLab's own REGIONE filter, e.g. `sicilia` (`asmelab_interpelli` only). |
+| `highlight_profile`  | Optional substring matched (case-insensitive) against PROFILO; matching interpelli are marked "⭐ TUO PROFILO -" and sorted first (`asmelab_interpelli` only). |
 | `enabled`            | Set to `false` to keep a source configured but paused.               |
+
+Adding another region to the AsmeLab source (or a second region-specific
+source alongside it) only needs a new entry with `"type":
+"asmelab_interpelli"` and the desired `region_filter` - no code changes.
+Provinces are only resolved for Sicilian comuni today
+(`sicily_municipality_provinces.json`); for any other region the Telegram
+message simply falls back to showing the comune without a province.
 
 ## Known limitations
 
