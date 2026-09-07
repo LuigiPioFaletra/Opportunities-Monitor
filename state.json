@@ -1,6 +1,6 @@
 {
   "asmelab_interpelli_sicilia": {
-    "checked": "2026-09-06T20:26:56.031228+00:00",
+    "checked": "2026-09-07T08:22:14.402881+00:00",
     "consecutive_errors": 0,
     "error_notified": false,
     "hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
@@ -8,41 +8,41 @@
     "last_error": null
   },
   "pg_avvisi_e_bandi": {
-    "checked": "2026-09-06T20:10:56.889240+00:00",
-    "consecutive_errors": 1,
+    "checked": "2026-09-07T08:21:48.109092+00:00",
+    "consecutive_errors": 0,
     "error_notified": false,
     "hash": "84eb9b84a063075c40c9396d2c60e8133dabaca1750aa93bb868ef3fb18c3791",
     "items": {
       "https://www.politichegiovanili.gov.it/comunicazione/avvisi-e-bandi/politiche-giovanili/maninteresse_cgn_2026/": "Bandi attivi"
     },
-    "last_error": "unreachable after 3 attempts from runner IP 172.182.244.1: HTTPSConnectionPool(host='www.politichegiovanili.gov.it', port=443): Max retries exceeded with url: /comunicazione/avvisi-e-bandi/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.politichegiovanili.gov.it', port=443) at 0x7f4ecb254740>, 'Connection to www.politichegiovanili.gov.it timed out. (connect timeout=30)'))"
+    "last_error": null
   },
   "pg_sc_avvisi_presentazione_progetti": {
-    "checked": "2026-09-06T20:12:42.642144+00:00",
-    "consecutive_errors": 1,
+    "checked": "2026-09-07T08:21:50.223017+00:00",
+    "consecutive_errors": 0,
     "error_notified": false,
     "hash": "c841bbe0ad58c13981e7c323352bcaf2c6597ec9a2ecb0842419f0cd2818e5f3",
     "items": {
       "http://www.gazzettaufficiale.it/": "Bandi attivi",
       "https://www.politichegiovanili.gov.it/comunicazione/avvisi-e-bandi/servizio-civile/avvisi-di-presentazione-programmi-e-progetti/2026_avvisopresentazioneprogrammi/": "Vai al bando"
     },
-    "last_error": "unreachable after 3 attempts from runner IP 172.182.244.1: HTTPSConnectionPool(host='www.politichegiovanili.gov.it', port=443): Max retries exceeded with url: /servizio-civile/bandi-e-avvisi-di-servizio-civile/avvisi-di-presentazione-programmi-e-progetti/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.politichegiovanili.gov.it', port=443) at 0x7f4ecb255850>, 'Connection to www.politichegiovanili.gov.it timed out. (connect timeout=30)'))"
+    "last_error": null
   },
   "pg_sc_bandi_selezione_volontari": {
-    "checked": "2026-09-06T20:14:28.050177+00:00",
-    "consecutive_errors": 1,
+    "checked": "2026-09-07T08:21:52.722878+00:00",
+    "consecutive_errors": 0,
     "error_notified": false,
     "hash": "d62dc26edee35470ec0beb6e9ae2a422e13af21e511f74c1bab0a32bd5040684",
     "items": {
       "http://www.gazzettaufficiale.it/": "Bandi attivi"
     },
-    "last_error": "unreachable after 3 attempts from runner IP 172.182.244.1: HTTPSConnectionPool(host='www.politichegiovanili.gov.it', port=443): Max retries exceeded with url: /servizio-civile/bandi-e-avvisi-di-servizio-civile/bandi-di-selezione-volontari/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.politichegiovanili.gov.it', port=443) at 0x7f4ecb2556a0>, 'Connection to www.politichegiovanili.gov.it timed out. (connect timeout=30)'))"
+    "last_error": null
   },
   "pg_sc_site_scan": {
-    "checked": "2026-09-06T20:26:54.025741+00:00",
+    "checked": "2026-09-07T08:22:12.887853+00:00",
     "consecutive_errors": 0,
     "error_notified": false,
-    "hash": "171e1631f2e63c85e4da5e00c68f2bf05a2ed8f0c0c094fa54251e1e32a772bf",
+    "hash": "259ca0c948bd131b72d8f78a391627991967fb1e5a9b921531b6f9c920fa58aa",
     "items": {
       "https://scelgoilserviziocivile.gov.it/": "Scelgo il servizio civile",
       "https://scelgoilserviziocivile.gov.it/leggi-il-bando/": "Il bando",
@@ -54,44 +54,70 @@
       "https://scelgoilserviziocivile.gov.it/scopri-il-servizio-civile/cosè/": "Cos'è",
       "https://scelgoilserviziocivile.gov.it/scopri-il-servizio-civile/i-settori/": "I settori",
       "https://scelgoilserviziocivile.gov.it/scopri-il-servizio-civile/perché-farlo/": "Perché farlo",
+      "https://www.politichegiovanili.gov.it/": "Dipartimento per le Politiche Giovanili e il Servizio Civile Universale",
+      "https://www.politichegiovanili.gov.it/area-personale/?target=VOL": "Per gli Operatori Volontari",
+      "https://www.politichegiovanili.gov.it/comunicazione/avvisi-e-bandi/": "Dipartimento per le Politiche Giovanili e il Servizio Civile Universale",
+      "https://www.politichegiovanili.gov.it/comunicazione/avvisi-e-bandi/servizio-civile/avvisi-di-presentazione-programmi-e-progetti/2026_avvisopresentazioneprogrammi/": "Vai al bando",
       "https://www.politichegiovanili.gov.it/comunicazione/avvisi-e-bandi/servizio-civile/bandi-di-selezione-volontari/bando_ordinario_2026/": "Scarica il bando",
+      "https://www.politichegiovanili.gov.it/comunicazione/news/": "Dipartimento per le Politiche Giovanili e il Servizio Civile Universale",
+      "https://www.politichegiovanili.gov.it/comunicazione/news/2026/7/concorso-video/": "Concorso \"Chi sei tu? – Storie del Servizio Civile Universale\"",
+      "https://www.politichegiovanili.gov.it/comunicazione/news/2026/7/grad_def_scascdagric/": "Comunicazione agli Enti: Avviso del 17 dicembre 2025 per la presentazione dei programmi di intervento di servizio civile universale specifici per il “Servizio civile agricolo”, il “Servizio civile ambientale per lo sviluppo sostenibile” e il “Servizio civile digitale” – pubblicazione delle graduatorie definitive",
+      "https://www.politichegiovanili.gov.it/comunicazione/news/2026/7/registrazione-webinar/": "Webinar \"Progettare il Servizio civile universale per la messa in trasparenza delle competenze\" – 17 luglio 2026",
+      "https://www.politichegiovanili.gov.it/comunicazione/news/2026/7/scu-tematici-2026-pubblicazione-graduatorie-provvisorie/": "Comunicazione agli Enti: Avviso del 17 dicembre 2025 per la presentazione dei programmi di interventodi servizio civile universale specifici per il “Servizio civile agricolo”, il “Servizio civile ambientale per losviluppo sostenibile” e il “Servizio civile digitale” – Punteggi provvisori.",
+      "https://www.politichegiovanili.gov.it/comunicazione/news/2026/8/materiale-webinar-14-luglio/": "Avviso agli enti e agli operatori volontari del Servizio civile universale: pubblicazione del materiale informativo relativo al Webinar del 14 luglio 2026",
+      "https://www.politichegiovanili.gov.it/comunicazione/news/2026/8/pagamenti-agosto/": "Comunicazione agli enti e agli operatori volontari del servizio civile universale - Calendario dei prossimi pagamenti",
+      "https://www.politichegiovanili.gov.it/comunicazione/news/2026/8/scuenti-domande-dola-bando-straordinario-2026/": "Avviso agli Enti di Servizio Civile Universale: applicativo web domande on line DOL",
+      "https://www.politichegiovanili.gov.it/comunicazione/news/2026/9/modulo_nodigit/": "Avviso agli enti di servizio civile universale: comunicazione dei nominativi dei giovani impossibilitati a sottoscrivere digitalmente il contratto",
+      "https://www.politichegiovanili.gov.it/comunicazione/news/2026/9/webinar-8-settembre/": "Avviso agli Enti di servizio civile universale: Webinar 8 settembre 2026 ore 15:30 - 16:30 - Presentazione Circolare Avvii del 13 maggio 2026",
+      "https://www.politichegiovanili.gov.it/dipartimento/organizzazione/ufficio-per-il-servizio-civile-universale/": "Ufficio SCU",
+      "https://www.politichegiovanili.gov.it/faq/volontari/": "FAQ Operatori Volontari",
+      "https://www.politichegiovanili.gov.it/servizio-civile/": "Servizio Civile",
+      "https://www.politichegiovanili.gov.it/servizio-civile/attestati-servizio-civile-universale/": "Attestati Servizio Civile Universale",
+      "https://www.politichegiovanili.gov.it/servizio-civile/bandi-e-avvisi-di-servizio-civile/": "Bandi e Avvisi di Servizio Civile",
+      "https://www.politichegiovanili.gov.it/servizio-civile/bandi-e-avvisi-di-servizio-civile/avvisi-di-presentazione-programmi-e-progetti/": "Dipartimento per le Politiche Giovanili e il Servizio Civile Universale",
+      "https://www.politichegiovanili.gov.it/servizio-civile/bandi-e-avvisi-di-servizio-civile/bandi-di-selezione-volontari/": "Dipartimento per le Politiche Giovanili e il Servizio Civile Universale",
+      "https://www.politichegiovanili.gov.it/servizio-civile/consulta/": "Consulta",
+      "https://www.politichegiovanili.gov.it/servizio-civile/corpi-civili-di-pace/": "Corpi civili di pace",
+      "https://www.politichegiovanili.gov.it/servizio-civile/cosa-e-il-servizio-civile/": "Cosa è il Servizio Civile",
+      "https://www.politichegiovanili.gov.it/servizio-civile/enti/": "Enti",
+      "https://www.politichegiovanili.gov.it/servizio-civile/i-numeri-del-servizio-civile-universale/": "I numeri del Servizio civile",
+      "https://www.politichegiovanili.gov.it/servizio-civile/i-numeri-del-servizio-civile-universale/guida-alla-navigazione/": "Guida alla navigazione",
+      "https://www.politichegiovanili.gov.it/servizio-civile/obiezione-di-coscienza/": "Obiezione di coscienza",
+      "https://www.politichegiovanili.gov.it/servizio-civile/operatori-volontari/": "Operatori volontari",
+      "https://www.politichegiovanili.gov.it/servizio-civile/pnrr/": "PNRR",
+      "https://www.politichegiovanili.gov.it/servizio-civile/sc-all-estero/": "Servizio civile all'estero",
+      "https://www.politichegiovanili.gov.it/servizio-civile/servizio-civile-in-cifre/": "Servizio Civile in cifre",
+      "https://www.politichegiovanili.gov.it/servizio-civile/sistema-unico-sc/": "Sistema Unico SC",
+      "https://www.politichegiovanili.gov.it/servizio-civile/storia_new/": "Storia",
       "https://www.scelgoilserviziocivile.gov.it/media/1255/guida_dol_bandograndiinvalidi_2026.pdf": "Scarica la guida DOL"
     },
     "last_error": null,
-    "partial_errors": [
-      "https://www.politichegiovanili.gov.it/: unreachable after 3 attempts from runner IP 172.182.244.1: HTTPSConnectionPool(host='www.politichegiovanili.gov.it', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.politichegiovanili.gov.it', port=443) at 0x7f4ecb254170>, 'Connection to www.politichegiovanili.gov.it timed out. (connect timeout=30)'))",
-      "https://www.politichegiovanili.gov.it/comunicazione/avvisi-e-bandi/: unreachable after 3 attempts from runner IP 172.182.244.1: HTTPSConnectionPool(host='www.politichegiovanili.gov.it', port=443): Max retries exceeded with url: /comunicazione/avvisi-e-bandi/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.politichegiovanili.gov.it', port=443) at 0x7f4ecb255880>, 'Connection to www.politichegiovanili.gov.it timed out. (connect timeout=30)'))",
-      "https://www.politichegiovanili.gov.it/comunicazione/news/: unreachable after 3 attempts from runner IP 172.182.244.1: HTTPSConnectionPool(host='www.politichegiovanili.gov.it', port=443): Max retries exceeded with url: /comunicazione/news/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.politichegiovanili.gov.it', port=443) at 0x7f4ecb256030>, 'Connection to www.politichegiovanili.gov.it timed out. (connect timeout=30)'))",
-      "https://www.politichegiovanili.gov.it/servizio-civile/: unreachable after 3 attempts from runner IP 172.182.244.1: HTTPSConnectionPool(host='www.politichegiovanili.gov.it', port=443): Max retries exceeded with url: /servizio-civile/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.politichegiovanili.gov.it', port=443) at 0x7f4ecb2546e0>, 'Connection to www.politichegiovanili.gov.it timed out. (connect timeout=30)'))",
-      "https://www.politichegiovanili.gov.it/servizio-civile/bandi-e-avvisi-di-servizio-civile/: unreachable after 3 attempts from runner IP 172.182.244.1: HTTPSConnectionPool(host='www.politichegiovanili.gov.it', port=443): Max retries exceeded with url: /servizio-civile/bandi-e-avvisi-di-servizio-civile/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.politichegiovanili.gov.it', port=443) at 0x7f4ecb21b6b0>, 'Connection to www.politichegiovanili.gov.it timed out. (connect timeout=30)'))",
-      "https://www.politichegiovanili.gov.it/servizio-civile/bandi-e-avvisi-di-servizio-civile/avvisi-di-presentazione-programmi-e-progetti/: unreachable after 3 attempts from runner IP 172.182.244.1: HTTPSConnectionPool(host='www.politichegiovanili.gov.it', port=443): Max retries exceeded with url: /servizio-civile/bandi-e-avvisi-di-servizio-civile/avvisi-di-presentazione-programmi-e-progetti/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.politichegiovanili.gov.it', port=443) at 0x7f4ecb255250>, 'Connection to www.politichegiovanili.gov.it timed out. (connect timeout=30)'))",
-      "https://www.politichegiovanili.gov.it/servizio-civile/bandi-e-avvisi-di-servizio-civile/bandi-di-selezione-volontari/: unreachable after 3 attempts from runner IP 172.182.244.1: HTTPSConnectionPool(host='www.politichegiovanili.gov.it', port=443): Max retries exceeded with url: /servizio-civile/bandi-e-avvisi-di-servizio-civile/bandi-di-selezione-volontari/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.politichegiovanili.gov.it', port=443) at 0x7f4ecb255f40>, 'Connection to www.politichegiovanili.gov.it timed out. (connect timeout=30)'))"
-    ]
+    "partial_errors": []
   },
   "supplenze_convocazioni": {
-    "checked": "2026-09-06T20:26:54.791571+00:00",
+    "checked": "2026-09-07T08:22:13.469655+00:00",
     "consecutive_errors": 0,
     "error_notified": false,
-    "hash": "0301d49a97904692db366fd22fbc3975928569019eabd48fc0213cae37d4a684",
+    "hash": "2b3044b58aa366757ee7ef3b6cf36147f9c7245be11864b718496b2778620b08",
     "items": {
       "https://cl-en.usr.sicilia.it/calcagno-gaetano-decreto-di-esclusione-gps-per-la-classe-di-concorso-a043-seconda-fascia-provincia-di-caltanissetta/": "Calcagno Gaetano. Decreto di esclusione GPS per la classe di concorso A043, seconda fascia provincia di Caltanissetta",
       "https://cl-en.usr.sicilia.it/conferimento-incarichi-a-tempo-determinato-continuita-dei-docenti-a-tempo-determinato-su-posto-di-sostegno-per-lanno-scolastico-2026-2027/": "Conferimento incarichi a tempo determinato – continuità dei docenti a tempo determinato su posto di sostegno per l’anno scolastico 2026/2027",
+      "https://cl-en.usr.sicilia.it/decreto-cumulativo-di-rettifica-gps-prima-e-seconda-fascia-provincia-di-caltanissetta-ed-enna-2/": "Decreto cumulativo di rettifica GPS, prima e seconda fascia, provincia di Caltanissetta ed Enna",
       "https://cl-en.usr.sicilia.it/decreto-scambio-consensuale-coniugi-bonvissuto-massimo-sicurezza-maria-as-2026-2027/": "DECRETO SCAMBIO CONSENSUALE CONIUGI- Bonvissuto Massimo – Sicurezza Maria- AS 2026/2027",
       "https://cl-en.usr.sicilia.it/gae-e-gps-conferimento-incarichi-a-tempo-determinato-a-s-2026-2027-i-turno/": "GAE e GPS- Conferimento incarichi a tempo determinato A.S. 2026/2027- I° TURNO",
       "https://cl-en.usr.sicilia.it/gae-e-gps-conferimento-incarichi-a-tempo-determinato-a-s-2026-2027-precisazioni-per-gli-aspiranti-e-per-le-scuole/": "GAE E GPS- CONFERIMENTO INCARICHI A TEMPO DETERMINATO A.S. 2026/2027- Precisazioni per gli aspiranti e per le scuole",
       "https://cl-en.usr.sicilia.it/pubblicazione-disponibilita-per-contratti-a-tempo-determinato-a-s-2026-2027-posti-comuni-e-di-sostegno-scuola-dellinfanzia-scuola-primaria-e-scuola-secondaria-di-primo-e-di-secondo-grado/": "Pubblicazione disponibilità per contratti a tempo determinato – a.s. 2026/2027- posti comuni e di sostegno scuola dell’infanzia, scuola primaria e scuola secondaria di primo e di secondo grado",
       "https://cl-en.usr.sicilia.it/rettifica-assegnazioni-interprovinciali-personale-docente-scuola-primaria-provincia-di-caltanissetta/": "Rettifica assegnazioni interprovinciali personale docente scuola primaria – provincia di Caltanissetta",
       "https://cl-en.usr.sicilia.it/ripubblicazione-graduatorie-provinciali-per-le-supplenze-biennio-2026-27-e-2027-28-province-di-caltanissetta-ed-enna/": "Ripubblicazione Graduatorie Provinciali per le Supplenze Biennio 2026/27 e 2027/28 – Province di Caltanissetta ed Enna",
-      "https://cl-en.usr.sicilia.it/seconda-rettifica-assegnazioni-provvisorie-adss-provincia-di-enna/": "Seconda rettifica Assegnazioni provvisorie ADSS– Provincia di Enna",
       "https://cl-en.usr.sicilia.it/vancheri-rosa-domenica-decreto-di-esclusione-gps-per-la-classe-di-concorso-adss-e-admm-prima-fascia-provincia-di-caltanissetta/": "VANCHERI ROSA DOMENICA Decreto di esclusione GPS per la classe di concorso ADSS e ADMM prima fascia provincia di Caltanissetta"
     },
     "last_error": null
   },
   "uke_dottorati": {
-    "checked": "2026-09-06T20:09:00.560140+00:00",
+    "checked": "2026-09-07T08:21:37.480340+00:00",
     "consecutive_errors": 0,
     "error_notified": false,
-    "hash": "1bd3ca28ab781ef9d1381d01199d6c244aa75357119afb1fd31240b9968c28f4",
+    "hash": "8423ec994f54a36708afd5dcc2c988d53eb713300c9010c624df63f5dbf37d19",
     "items": {
       "https://gestioneaule.unikore.it/agendaweb_unikore//index.php?_lang=it": "Agenda WEB",
       "https://prac.uke.it/": "PSYCHO-PRAC Project",
@@ -160,7 +186,6 @@
       "https://uke.it/it/info-per/futuri-studenti/vivere-il-campus": "Vivere il campus",
       "https://uke.it/it/info-per/lavora-con-uke": "Lavorare con UKE",
       "https://uke.it/it/info-per/studenti-iscritti": "Studenti iscritti",
-      "https://uke.it/it/informativa-sulla-privacy": "Informativa sulla Privacy",
       "https://uke.it/it/internazionale": "Internazionale",
       "https://uke.it/it/internazionale/centro-di-documentazione-europea": "Centro di documentazione europea",
       "https://uke.it/it/internazionale/erasmus": "Erasmus+",
@@ -211,7 +236,7 @@
     "last_error": null
   },
   "uke_lavoro_altre_figure": {
-    "checked": "2026-09-06T20:09:08.489909+00:00",
+    "checked": "2026-09-07T08:21:45.076900+00:00",
     "consecutive_errors": 0,
     "error_notified": false,
     "hash": "69fd479eb50e709e4475a252fae1f311d76dd7283bab1fb43e88e70a95b3af71",
@@ -221,7 +246,7 @@
     "last_error": null
   },
   "uke_lavoro_docenti_a_contratto": {
-    "checked": "2026-09-06T20:09:05.988166+00:00",
+    "checked": "2026-09-07T08:21:42.546115+00:00",
     "consecutive_errors": 0,
     "error_notified": false,
     "hash": "5147f5e7aedb5c52f0607fe521074db0027025df36478fcebf86365932798fe2",
@@ -231,7 +256,7 @@
     "last_error": null
   },
   "uke_lavoro_opportunita_studenti": {
-    "checked": "2026-09-06T20:09:11.220763+00:00",
+    "checked": "2026-09-07T08:21:47.440963+00:00",
     "consecutive_errors": 0,
     "error_notified": false,
     "hash": "cc7ce8ff30b72a6a015f30831415598794e842f2116edbc162d7688f9703c577",
@@ -241,10 +266,10 @@
     "last_error": null
   },
   "uke_lavoro_professori_ricercatori": {
-    "checked": "2026-09-06T20:09:03.783867+00:00",
+    "checked": "2026-09-07T08:21:41.226591+00:00",
     "consecutive_errors": 0,
     "error_notified": false,
-    "hash": "3d9789439e26f1bdce11a0ada67712c0dadcc6cc296310762f495a5ee779ceb2",
+    "hash": "95e9be2c61c386261ef5df808bf1383a638038b1a1092ccfce6f6afe264ca940",
     "items": {
       "https://gestioneaule.unikore.it/agendaweb_unikore//index.php?_lang=it": "Agenda WEB",
       "https://prac.uke.it/": "PSYCHO-PRAC Project",
@@ -292,7 +317,6 @@
       "https://uke.it/it/info-per/lavora-con-uke/professori-e-ricercatori/decreto-presidenziale-n-107-2026": "Decreto presidenziale n. 107/2026",
       "https://uke.it/it/info-per/lavora-con-uke/professori-e-ricercatori/decreto-presidenziale-n-108-2026": "Decreto presidenziale n. 108/2026",
       "https://uke.it/it/info-per/studenti-iscritti": "Studenti iscritti",
-      "https://uke.it/it/informativa-sulla-privacy": "Informativa sulla Privacy",
       "https://uke.it/it/internazionale": "Internazionale",
       "https://uke.it/it/internazionale/centro-di-documentazione-europea": "Centro di documentazione europea",
       "https://uke.it/it/internazionale/erasmus": "Erasmus+",
