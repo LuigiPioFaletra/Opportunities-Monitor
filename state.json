@@ -1,6 +1,6 @@
 {
   "asmelab_interpelli_sicilia": {
-    "checked": "2026-09-08T20:09:38.763205+00:00",
+    "checked": "2026-09-09T08:36:37.906603+00:00",
     "consecutive_errors": 0,
     "error_notified": false,
     "hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
@@ -8,41 +8,41 @@
     "last_error": null
   },
   "pg_avvisi_e_bandi": {
-    "checked": "2026-09-08T20:09:12.381518+00:00",
-    "consecutive_errors": 0,
+    "checked": "2026-09-09T08:20:44.320745+00:00",
+    "consecutive_errors": 1,
     "error_notified": false,
     "hash": "84eb9b84a063075c40c9396d2c60e8133dabaca1750aa93bb868ef3fb18c3791",
     "items": {
       "https://www.politichegiovanili.gov.it/comunicazione/avvisi-e-bandi/politiche-giovanili/maninteresse_cgn_2026/": "Bandi attivi"
     },
-    "last_error": null
+    "last_error": "unreachable after 3 attempts from runner IP 9.234.151.18: HTTPSConnectionPool(host='www.politichegiovanili.gov.it', port=443): Max retries exceeded with url: /comunicazione/avvisi-e-bandi/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.politichegiovanili.gov.it', port=443) at 0x7fdce7e48710>, 'Connection to www.politichegiovanili.gov.it timed out. (connect timeout=30)'))"
   },
   "pg_sc_avvisi_presentazione_progetti": {
-    "checked": "2026-09-08T20:09:14.534379+00:00",
-    "consecutive_errors": 0,
+    "checked": "2026-09-09T08:22:29.619200+00:00",
+    "consecutive_errors": 1,
     "error_notified": false,
     "hash": "c841bbe0ad58c13981e7c323352bcaf2c6597ec9a2ecb0842419f0cd2818e5f3",
     "items": {
       "http://www.gazzettaufficiale.it/": "Bandi attivi",
       "https://www.politichegiovanili.gov.it/comunicazione/avvisi-e-bandi/servizio-civile/avvisi-di-presentazione-programmi-e-progetti/2026_avvisopresentazioneprogrammi/": "Vai al bando"
     },
-    "last_error": null
+    "last_error": "unreachable after 3 attempts from runner IP 9.234.151.18: HTTPSConnectionPool(host='www.politichegiovanili.gov.it', port=443): Max retries exceeded with url: /servizio-civile/bandi-e-avvisi-di-servizio-civile/avvisi-di-presentazione-programmi-e-progetti/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.politichegiovanili.gov.it', port=443) at 0x7fdce7e49880>, 'Connection to www.politichegiovanili.gov.it timed out. (connect timeout=30)'))"
   },
   "pg_sc_bandi_selezione_volontari": {
-    "checked": "2026-09-08T20:09:17.015297+00:00",
-    "consecutive_errors": 0,
+    "checked": "2026-09-09T08:24:15.307206+00:00",
+    "consecutive_errors": 1,
     "error_notified": false,
     "hash": "d62dc26edee35470ec0beb6e9ae2a422e13af21e511f74c1bab0a32bd5040684",
     "items": {
       "http://www.gazzettaufficiale.it/": "Bandi attivi"
     },
-    "last_error": null
+    "last_error": "unreachable after 3 attempts from runner IP 9.234.151.18: HTTPSConnectionPool(host='www.politichegiovanili.gov.it', port=443): Max retries exceeded with url: /servizio-civile/bandi-e-avvisi-di-servizio-civile/bandi-di-selezione-volontari/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.politichegiovanili.gov.it', port=443) at 0x7fdce7e49bb0>, 'Connection to www.politichegiovanili.gov.it timed out. (connect timeout=30)'))"
   },
   "pg_sc_site_scan": {
-    "checked": "2026-09-08T20:09:37.192165+00:00",
+    "checked": "2026-09-09T08:36:36.446817+00:00",
     "consecutive_errors": 0,
     "error_notified": false,
-    "hash": "4b72401b84319172adb7a48168fbde047eed3b506ad2bc50531c9c81caefb6b6",
+    "hash": "171e1631f2e63c85e4da5e00c68f2bf05a2ed8f0c0c094fa54251e1e32a772bf",
     "items": {
       "https://scelgoilserviziocivile.gov.it/": "Scelgo il servizio civile",
       "https://scelgoilserviziocivile.gov.it/leggi-il-bando/": "Il bando",
@@ -54,48 +54,22 @@
       "https://scelgoilserviziocivile.gov.it/scopri-il-servizio-civile/cosè/": "Cos'è",
       "https://scelgoilserviziocivile.gov.it/scopri-il-servizio-civile/i-settori/": "I settori",
       "https://scelgoilserviziocivile.gov.it/scopri-il-servizio-civile/perché-farlo/": "Perché farlo",
-      "https://www.politichegiovanili.gov.it/": "Dipartimento per le Politiche Giovanili e il Servizio Civile Universale",
-      "https://www.politichegiovanili.gov.it/area-personale/?target=VOL": "Per gli Operatori Volontari",
-      "https://www.politichegiovanili.gov.it/comunicazione/avvisi-e-bandi/": "Dipartimento per le Politiche Giovanili e il Servizio Civile Universale",
-      "https://www.politichegiovanili.gov.it/comunicazione/avvisi-e-bandi/servizio-civile/avvisi-di-presentazione-programmi-e-progetti/2026_avvisopresentazioneprogrammi/": "Vai al bando",
       "https://www.politichegiovanili.gov.it/comunicazione/avvisi-e-bandi/servizio-civile/bandi-di-selezione-volontari/bando_ordinario_2026/": "Scarica il bando",
-      "https://www.politichegiovanili.gov.it/comunicazione/news/": "Dipartimento per le Politiche Giovanili e il Servizio Civile Universale",
-      "https://www.politichegiovanili.gov.it/comunicazione/news/2026/7/concorso-video/": "Concorso \"Chi sei tu? – Storie del Servizio Civile Universale\"",
-      "https://www.politichegiovanili.gov.it/comunicazione/news/2026/7/grad_def_scascdagric/": "Comunicazione agli Enti: Avviso del 17 dicembre 2025 per la presentazione dei programmi di intervento di servizio civile universale specifici per il “Servizio civile agricolo”, il “Servizio civile ambientale per lo sviluppo sostenibile” e il “Servizio civile digitale” – pubblicazione delle graduatorie definitive",
-      "https://www.politichegiovanili.gov.it/comunicazione/news/2026/7/registrazione-webinar/": "Webinar \"Progettare il Servizio civile universale per la messa in trasparenza delle competenze\" – 17 luglio 2026",
-      "https://www.politichegiovanili.gov.it/comunicazione/news/2026/8/materiale-webinar-14-luglio/": "Avviso agli enti e agli operatori volontari del Servizio civile universale: pubblicazione del materiale informativo relativo al Webinar del 14 luglio 2026",
-      "https://www.politichegiovanili.gov.it/comunicazione/news/2026/8/pagamenti-agosto/": "Comunicazione agli enti e agli operatori volontari del servizio civile universale - Calendario dei prossimi pagamenti",
-      "https://www.politichegiovanili.gov.it/comunicazione/news/2026/8/scuenti-domande-dola-bando-straordinario-2026/": "Avviso agli Enti di Servizio Civile Universale: applicativo web domande on line DOL",
-      "https://www.politichegiovanili.gov.it/comunicazione/news/2026/9/modulo_nodigit/": "Avviso agli enti di servizio civile universale: comunicazione dei nominativi dei giovani impossibilitati a sottoscrivere digitalmente il contratto",
-      "https://www.politichegiovanili.gov.it/comunicazione/news/2026/9/proroga-nobis/": "Avviso agli enti di servizio civile universale: Copertura assicurativa operatori volontari – Gestione avvii di settembre e ottobre 2026",
-      "https://www.politichegiovanili.gov.it/comunicazione/news/2026/9/webinar-8-settembre/": "Avviso agli Enti di servizio civile universale: Webinar 8 settembre 2026 ore 15:30 - 16:30 - Presentazione Circolare Avvii del 13 maggio 2026",
-      "https://www.politichegiovanili.gov.it/dipartimento/organizzazione/ufficio-per-il-servizio-civile-universale/": "Ufficio SCU",
-      "https://www.politichegiovanili.gov.it/faq/volontari/": "FAQ Operatori Volontari",
-      "https://www.politichegiovanili.gov.it/servizio-civile/": "Servizio Civile",
-      "https://www.politichegiovanili.gov.it/servizio-civile/attestati-servizio-civile-universale/": "Attestati Servizio Civile Universale",
-      "https://www.politichegiovanili.gov.it/servizio-civile/bandi-e-avvisi-di-servizio-civile/": "Bandi e Avvisi di Servizio Civile",
-      "https://www.politichegiovanili.gov.it/servizio-civile/bandi-e-avvisi-di-servizio-civile/avvisi-di-presentazione-programmi-e-progetti/": "Dipartimento per le Politiche Giovanili e il Servizio Civile Universale",
-      "https://www.politichegiovanili.gov.it/servizio-civile/bandi-e-avvisi-di-servizio-civile/bandi-di-selezione-volontari/": "Dipartimento per le Politiche Giovanili e il Servizio Civile Universale",
-      "https://www.politichegiovanili.gov.it/servizio-civile/consulta/": "Consulta",
-      "https://www.politichegiovanili.gov.it/servizio-civile/corpi-civili-di-pace/": "Corpi civili di pace",
-      "https://www.politichegiovanili.gov.it/servizio-civile/cosa-e-il-servizio-civile/": "Cosa è il Servizio Civile",
-      "https://www.politichegiovanili.gov.it/servizio-civile/enti/": "Enti",
-      "https://www.politichegiovanili.gov.it/servizio-civile/i-numeri-del-servizio-civile-universale/": "I numeri del Servizio civile",
-      "https://www.politichegiovanili.gov.it/servizio-civile/i-numeri-del-servizio-civile-universale/guida-alla-navigazione/": "Guida alla navigazione",
-      "https://www.politichegiovanili.gov.it/servizio-civile/obiezione-di-coscienza/": "Obiezione di coscienza",
-      "https://www.politichegiovanili.gov.it/servizio-civile/operatori-volontari/": "Operatori volontari",
-      "https://www.politichegiovanili.gov.it/servizio-civile/pnrr/": "PNRR",
-      "https://www.politichegiovanili.gov.it/servizio-civile/sc-all-estero/": "Servizio civile all'estero",
-      "https://www.politichegiovanili.gov.it/servizio-civile/servizio-civile-in-cifre/": "Servizio Civile in cifre",
-      "https://www.politichegiovanili.gov.it/servizio-civile/sistema-unico-sc/": "Sistema Unico SC",
-      "https://www.politichegiovanili.gov.it/servizio-civile/storia_new/": "Storia",
       "https://www.scelgoilserviziocivile.gov.it/media/1255/guida_dol_bandograndiinvalidi_2026.pdf": "Scarica la guida DOL"
     },
     "last_error": null,
-    "partial_errors": []
+    "partial_errors": [
+      "https://www.politichegiovanili.gov.it/: unreachable after 3 attempts from runner IP 9.234.151.18: HTTPSConnectionPool(host='www.politichegiovanili.gov.it', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.politichegiovanili.gov.it', port=443) at 0x7fdce7e48350>, 'Connection to www.politichegiovanili.gov.it timed out. (connect timeout=30)'))",
+      "https://www.politichegiovanili.gov.it/comunicazione/avvisi-e-bandi/: unreachable after 3 attempts from runner IP 9.234.151.18: HTTPSConnectionPool(host='www.politichegiovanili.gov.it', port=443): Max retries exceeded with url: /comunicazione/avvisi-e-bandi/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.politichegiovanili.gov.it', port=443) at 0x7fdce7e49d30>, 'Connection to www.politichegiovanili.gov.it timed out. (connect timeout=30)'))",
+      "https://www.politichegiovanili.gov.it/comunicazione/news/: unreachable after 3 attempts from runner IP 9.234.151.18: HTTPSConnectionPool(host='www.politichegiovanili.gov.it', port=443): Max retries exceeded with url: /comunicazione/news/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.politichegiovanili.gov.it', port=443) at 0x7fdce7e4a030>, 'Connection to www.politichegiovanili.gov.it timed out. (connect timeout=30)'))",
+      "https://www.politichegiovanili.gov.it/servizio-civile/: unreachable after 3 attempts from runner IP 9.234.151.18: HTTPSConnectionPool(host='www.politichegiovanili.gov.it', port=443): Max retries exceeded with url: /servizio-civile/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.politichegiovanili.gov.it', port=443) at 0x7fdce7e486b0>, 'Connection to www.politichegiovanili.gov.it timed out. (connect timeout=30)'))",
+      "https://www.politichegiovanili.gov.it/servizio-civile/bandi-e-avvisi-di-servizio-civile/: unreachable after 3 attempts from runner IP 9.234.151.18: HTTPSConnectionPool(host='www.politichegiovanili.gov.it', port=443): Max retries exceeded with url: /servizio-civile/bandi-e-avvisi-di-servizio-civile/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.politichegiovanili.gov.it', port=443) at 0x7fdce7e17920>, 'Connection to www.politichegiovanili.gov.it timed out. (connect timeout=30)'))",
+      "https://www.politichegiovanili.gov.it/servizio-civile/bandi-e-avvisi-di-servizio-civile/avvisi-di-presentazione-programmi-e-progetti/: unreachable after 3 attempts from runner IP 9.234.151.18: HTTPSConnectionPool(host='www.politichegiovanili.gov.it', port=443): Max retries exceeded with url: /servizio-civile/bandi-e-avvisi-di-servizio-civile/avvisi-di-presentazione-programmi-e-progetti/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.politichegiovanili.gov.it', port=443) at 0x7fdce7e490a0>, 'Connection to www.politichegiovanili.gov.it timed out. (connect timeout=30)'))",
+      "https://www.politichegiovanili.gov.it/servizio-civile/bandi-e-avvisi-di-servizio-civile/bandi-di-selezione-volontari/: unreachable after 3 attempts from runner IP 9.234.151.18: HTTPSConnectionPool(host='www.politichegiovanili.gov.it', port=443): Max retries exceeded with url: /servizio-civile/bandi-e-avvisi-di-servizio-civile/bandi-di-selezione-volontari/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.politichegiovanili.gov.it', port=443) at 0x7fdce7e4a300>, 'Connection to www.politichegiovanili.gov.it timed out. (connect timeout=30)'))"
+    ]
   },
   "supplenze_convocazioni": {
-    "checked": "2026-09-08T20:09:37.878012+00:00",
+    "checked": "2026-09-09T08:36:37.023357+00:00",
     "consecutive_errors": 0,
     "error_notified": false,
     "hash": "a2d2de70dd2f4c1fc052663eb123cf7a244aa09b33580145016763e1325e0ec4",
@@ -114,7 +88,7 @@
     "last_error": null
   },
   "uke_dottorati": {
-    "checked": "2026-09-08T20:08:55.136311+00:00",
+    "checked": "2026-09-09T08:18:47.841427+00:00",
     "consecutive_errors": 0,
     "error_notified": false,
     "hash": "1bd3ca28ab781ef9d1381d01199d6c244aa75357119afb1fd31240b9968c28f4",
@@ -237,7 +211,7 @@
     "last_error": null
   },
   "uke_lavoro_altre_figure": {
-    "checked": "2026-09-08T20:09:05.800730+00:00",
+    "checked": "2026-09-09T08:18:56.286393+00:00",
     "consecutive_errors": 0,
     "error_notified": false,
     "hash": "69fd479eb50e709e4475a252fae1f311d76dd7283bab1fb43e88e70a95b3af71",
@@ -247,7 +221,7 @@
     "last_error": null
   },
   "uke_lavoro_docenti_a_contratto": {
-    "checked": "2026-09-08T20:09:03.325832+00:00",
+    "checked": "2026-09-09T08:18:53.878581+00:00",
     "consecutive_errors": 0,
     "error_notified": false,
     "hash": "5147f5e7aedb5c52f0607fe521074db0027025df36478fcebf86365932798fe2",
@@ -257,7 +231,7 @@
     "last_error": null
   },
   "uke_lavoro_opportunita_studenti": {
-    "checked": "2026-09-08T20:09:11.763651+00:00",
+    "checked": "2026-09-09T08:18:58.901823+00:00",
     "consecutive_errors": 0,
     "error_notified": false,
     "hash": "0af6355e78365cb3c424985bf08f93936cfb49e84ff850bdc24bf9764e9d283f",
@@ -267,7 +241,7 @@
     "last_error": null
   },
   "uke_lavoro_professori_ricercatori": {
-    "checked": "2026-09-08T20:08:59.596952+00:00",
+    "checked": "2026-09-09T08:18:51.683932+00:00",
     "consecutive_errors": 0,
     "error_notified": false,
     "hash": "47f1bff0269595bad586107d108c9a88904566247dc0ef0868139bb129e71860",
