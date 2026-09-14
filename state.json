@@ -1,6 +1,6 @@
 {
   "asmelab_interpelli_sicilia": {
-    "checked": "2026-09-13T20:09:31.194020+00:00",
+    "checked": "2026-09-14T08:22:18.744065+00:00",
     "consecutive_errors": 0,
     "error_notified": false,
     "hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
@@ -8,7 +8,7 @@
     "last_error": null
   },
   "pg_avvisi_e_bandi": {
-    "checked": "2026-09-13T20:09:05.199117+00:00",
+    "checked": "2026-09-14T08:21:52.778376+00:00",
     "consecutive_errors": 0,
     "error_notified": false,
     "hash": "84eb9b84a063075c40c9396d2c60e8133dabaca1750aa93bb868ef3fb18c3791",
@@ -18,7 +18,7 @@
     "last_error": null
   },
   "pg_sc_avvisi_presentazione_progetti": {
-    "checked": "2026-09-13T20:09:06.692884+00:00",
+    "checked": "2026-09-14T08:21:53.829854+00:00",
     "consecutive_errors": 0,
     "error_notified": false,
     "hash": "c841bbe0ad58c13981e7c323352bcaf2c6597ec9a2ecb0842419f0cd2818e5f3",
@@ -29,7 +29,7 @@
     "last_error": null
   },
   "pg_sc_bandi_selezione_volontari": {
-    "checked": "2026-09-13T20:09:09.191434+00:00",
+    "checked": "2026-09-14T08:21:56.326798+00:00",
     "consecutive_errors": 0,
     "error_notified": false,
     "hash": "d62dc26edee35470ec0beb6e9ae2a422e13af21e511f74c1bab0a32bd5040684",
@@ -39,10 +39,10 @@
     "last_error": null
   },
   "pg_sc_site_scan": {
-    "checked": "2026-09-13T20:09:29.406385+00:00",
+    "checked": "2026-09-14T08:22:16.529047+00:00",
     "consecutive_errors": 0,
     "error_notified": false,
-    "hash": "6b13e5be4df747a2846275930a09ef26b6afdec9fb2da73a2f45fdd6c6a1be9e",
+    "hash": "68d00ebb7f3189b04189cea465df03eeace83521f52441cab7a91562fd4e8bae",
     "items": {
       "https://scelgoilserviziocivile.gov.it/": "Scelgo il servizio civile",
       "https://scelgoilserviziocivile.gov.it/leggi-il-bando/": "Il bando",
@@ -68,6 +68,7 @@
       "https://www.politichegiovanili.gov.it/comunicazione/news/2026/9/materiali-webinar-8-settembre/": "Servizio Civile",
       "https://www.politichegiovanili.gov.it/comunicazione/news/2026/9/modulo_nodigit/": "Avviso agli enti di servizio civile universale: comunicazione dei nominativi dei giovani impossibilitati a sottoscrivere digitalmente il contratto",
       "https://www.politichegiovanili.gov.it/comunicazione/news/2026/9/proroga-nobis/": "Avviso agli enti di servizio civile universale: Copertura assicurativa operatori volontari – Gestione avvii di settembre e ottobre 2026",
+      "https://www.politichegiovanili.gov.it/comunicazione/news/2026/9/rapporto-esiti-progetti-2025/": "Rapporto sugli esiti dell’esperienza degli operatori volontari a 12 mesi dalla conclusione del servizio civile universale",
       "https://www.politichegiovanili.gov.it/comunicazione/news/2026/9/relazione-al-parlamento-2025/": "Pubblicata la Relazione sull'organizzazione, sulla gestione e sullo svolgimento del Servizio civile universale relativa all’anno 2025",
       "https://www.politichegiovanili.gov.it/comunicazione/news/2026/9/report-bando-26-giugno/": "Report bando SCU del 26 giugno 2026",
       "https://www.politichegiovanili.gov.it/comunicazione/news/2026/9/webinar-8-settembre/": "Avviso agli Enti di servizio civile universale: Webinar 8 settembre 2026 ore 15:30 - 16:30 - Presentazione Circolare Avvii del 13 maggio 2026",
@@ -97,7 +98,7 @@
     "partial_errors": []
   },
   "supplenze_convocazioni": {
-    "checked": "2026-09-13T20:09:30.215085+00:00",
+    "checked": "2026-09-14T08:22:17.487709+00:00",
     "consecutive_errors": 0,
     "error_notified": false,
     "hash": "dab8a0d3b7350bdd8a6066a2b7d0c93f8d0f90d026ad6aaaa1bcd44835496671",
@@ -116,10 +117,10 @@
     "last_error": null
   },
   "uke_dottorati": {
-    "checked": "2026-09-13T20:08:54.504489+00:00",
+    "checked": "2026-09-14T08:21:40.354784+00:00",
     "consecutive_errors": 0,
     "error_notified": false,
-    "hash": "1bd3ca28ab781ef9d1381d01199d6c244aa75357119afb1fd31240b9968c28f4",
+    "hash": "8423ec994f54a36708afd5dcc2c988d53eb713300c9010c624df63f5dbf37d19",
     "items": {
       "https://gestioneaule.unikore.it/agendaweb_unikore//index.php?_lang=it": "Agenda WEB",
       "https://prac.uke.it/": "PSYCHO-PRAC Project",
@@ -188,7 +189,6 @@
       "https://uke.it/it/info-per/futuri-studenti/vivere-il-campus": "Vivere il campus",
       "https://uke.it/it/info-per/lavora-con-uke": "Lavorare con UKE",
       "https://uke.it/it/info-per/studenti-iscritti": "Studenti iscritti",
-      "https://uke.it/it/informativa-sulla-privacy": "Informativa sulla Privacy",
       "https://uke.it/it/internazionale": "Internazionale",
       "https://uke.it/it/internazionale/centro-di-documentazione-europea": "Centro di documentazione europea",
       "https://uke.it/it/internazionale/erasmus": "Erasmus+",
@@ -239,7 +239,7 @@
     "last_error": null
   },
   "uke_lavoro_altre_figure": {
-    "checked": "2026-09-13T20:09:02.886536+00:00",
+    "checked": "2026-09-14T08:21:48.384967+00:00",
     "consecutive_errors": 0,
     "error_notified": false,
     "hash": "ce2467e184f4f86738630accc6f892294769e2d718ae6b652bb3ef48657224b8",
@@ -249,7 +249,7 @@
     "last_error": null
   },
   "uke_lavoro_docenti_a_contratto": {
-    "checked": "2026-09-13T20:09:00.184107+00:00",
+    "checked": "2026-09-14T08:21:45.655647+00:00",
     "consecutive_errors": 0,
     "error_notified": false,
     "hash": "9df03a6bcc0042e7aee5e99abadf7d86ba7646c026cadb6e85efd36a07806415",
@@ -259,7 +259,7 @@
     "last_error": null
   },
   "uke_lavoro_opportunita_studenti": {
-    "checked": "2026-09-13T20:09:03.885837+00:00",
+    "checked": "2026-09-14T08:21:50.928652+00:00",
     "consecutive_errors": 0,
     "error_notified": false,
     "hash": "0af6355e78365cb3c424985bf08f93936cfb49e84ff850bdc24bf9764e9d283f",
@@ -269,7 +269,7 @@
     "last_error": null
   },
   "uke_lavoro_professori_ricercatori": {
-    "checked": "2026-09-13T20:08:56.343234+00:00",
+    "checked": "2026-09-14T08:21:44.086468+00:00",
     "consecutive_errors": 0,
     "error_notified": false,
     "hash": "47f1bff0269595bad586107d108c9a88904566247dc0ef0868139bb129e71860",
