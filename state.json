@@ -1,6 +1,6 @@
 {
   "asmelab_interpelli_sicilia": {
-    "checked": "2026-09-17T08:38:05.659800+00:00",
+    "checked": "2026-09-17T20:10:19.324755+00:00",
     "consecutive_errors": 0,
     "error_notified": false,
     "hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
@@ -8,74 +8,105 @@
     "last_error": null
   },
   "pg_avvisi_e_bandi": {
-    "checked": "2026-09-17T08:22:11.273734+00:00",
-    "consecutive_errors": 4,
-    "error_notified": true,
+    "checked": "2026-09-17T20:09:52.904685+00:00",
+    "consecutive_errors": 0,
+    "error_notified": false,
     "hash": "84eb9b84a063075c40c9396d2c60e8133dabaca1750aa93bb868ef3fb18c3791",
     "items": {
       "https://www.politichegiovanili.gov.it/comunicazione/avvisi-e-bandi/politiche-giovanili/maninteresse_cgn_2026/": "Bandi attivi"
     },
-    "last_error": "unreachable after 3 attempts from runner IP 52.152.180.203: HTTPSConnectionPool(host='www.politichegiovanili.gov.it', port=443): Max retries exceeded with url: /comunicazione/avvisi-e-bandi/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.politichegiovanili.gov.it', port=443) at 0x7f1586e143e0>, 'Connection to www.politichegiovanili.gov.it timed out. (connect timeout=30)'))"
+    "last_error": null
   },
   "pg_sc_avvisi_presentazione_progetti": {
-    "checked": "2026-09-17T08:23:57.050066+00:00",
-    "consecutive_errors": 4,
-    "error_notified": true,
+    "checked": "2026-09-17T20:09:54.825838+00:00",
+    "consecutive_errors": 0,
+    "error_notified": false,
     "hash": "c841bbe0ad58c13981e7c323352bcaf2c6597ec9a2ecb0842419f0cd2818e5f3",
     "items": {
       "http://www.gazzettaufficiale.it/": "Bandi attivi",
       "https://www.politichegiovanili.gov.it/comunicazione/avvisi-e-bandi/servizio-civile/avvisi-di-presentazione-programmi-e-progetti/2026_avvisopresentazioneprogrammi/": "Vai al bando"
     },
-    "last_error": "unreachable after 3 attempts from runner IP 52.152.180.203: HTTPSConnectionPool(host='www.politichegiovanili.gov.it', port=443): Max retries exceeded with url: /servizio-civile/bandi-e-avvisi-di-servizio-civile/avvisi-di-presentazione-programmi-e-progetti/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.politichegiovanili.gov.it', port=443) at 0x7f1586e15430>, 'Connection to www.politichegiovanili.gov.it timed out. (connect timeout=30)'))"
+    "last_error": null
   },
   "pg_sc_bandi_selezione_volontari": {
-    "checked": "2026-09-17T08:25:42.472772+00:00",
-    "consecutive_errors": 4,
-    "error_notified": true,
+    "checked": "2026-09-17T20:09:57.321852+00:00",
+    "consecutive_errors": 0,
+    "error_notified": false,
     "hash": "d62dc26edee35470ec0beb6e9ae2a422e13af21e511f74c1bab0a32bd5040684",
     "items": {
       "http://www.gazzettaufficiale.it/": "Bandi attivi"
     },
-    "last_error": "unreachable after 3 attempts from runner IP 52.152.180.203: HTTPSConnectionPool(host='www.politichegiovanili.gov.it', port=443): Max retries exceeded with url: /servizio-civile/bandi-e-avvisi-di-servizio-civile/bandi-di-selezione-volontari/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.politichegiovanili.gov.it', port=443) at 0x7f1586e17380>, 'Connection to www.politichegiovanili.gov.it timed out. (connect timeout=30)'))"
+    "last_error": null
   },
   "pg_sc_site_scan": {
-    "checked": "2026-09-17T08:38:04.121028+00:00",
+    "checked": "2026-09-17T20:10:17.585862+00:00",
     "consecutive_errors": 0,
     "error_notified": false,
-    "hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-    "items": {},
+    "hash": "5d7aef25168413940af4562a2aacdbdf2efa5b779c042f7af386d9f1e7c9a6a1",
+    "items": {
+      "https://www.politichegiovanili.gov.it/": "Dipartimento per le Politiche Giovanili e il Servizio Civile Universale",
+      "https://www.politichegiovanili.gov.it/area-personale/?target=VOL": "Per gli Operatori Volontari",
+      "https://www.politichegiovanili.gov.it/comunicazione/avvisi-e-bandi/": "Dipartimento per le Politiche Giovanili e il Servizio Civile Universale",
+      "https://www.politichegiovanili.gov.it/comunicazione/avvisi-e-bandi/servizio-civile/avvisi-di-presentazione-programmi-e-progetti/2026_avvisopresentazioneprogrammi/": "Vai al bando",
+      "https://www.politichegiovanili.gov.it/comunicazione/news/": "Dipartimento per le Politiche Giovanili e il Servizio Civile Universale",
+      "https://www.politichegiovanili.gov.it/comunicazione/news/2026/7/concorso-video/": "Concorso \"Chi sei tu? – Storie del Servizio Civile Universale\"",
+      "https://www.politichegiovanili.gov.it/comunicazione/news/2026/9/consulta_23_settembre/": "Consulta Nazionale per il Servizio Civile Universale. Convocazione riunione del 23 settembre 2026.",
+      "https://www.politichegiovanili.gov.it/comunicazione/news/2026/9/decreto-finanziamento-tematici-2026/": "Pubblicazione del decreto di finanziamento delle posizioni di operatore volontario relative a programmi d’intervento di Servizio Civile Universale specifici per il “Servizio civile agricolo”, il “Servizio civile ambientale per lo sviluppo sostenibile” e il “Servizio civile digitale” presentati in relazione all’Avviso pubblicato sul sito istituzionale del Dipartimento in data 17 dicembre 2025",
+      "https://www.politichegiovanili.gov.it/comunicazione/news/2026/9/firma-autografa-contratto/": "Firma autografa del contratto di Servizio civile universale: accesso all’area riservata",
+      "https://www.politichegiovanili.gov.it/comunicazione/news/2026/9/firma-digitale-contratto/": "Assistenza firma digitale contratto di Servizio civile universale",
+      "https://www.politichegiovanili.gov.it/comunicazione/news/2026/9/materiali-webinar-8-settembre/": "Servizio Civile",
+      "https://www.politichegiovanili.gov.it/comunicazione/news/2026/9/modulo_nodigit/": "Avviso agli enti di servizio civile universale: comunicazione dei nominativi dei giovani impossibilitati a sottoscrivere digitalmente il contratto",
+      "https://www.politichegiovanili.gov.it/comunicazione/news/2026/9/proroga-nobis/": "Avviso agli enti di servizio civile universale: Copertura assicurativa operatori volontari – Gestione avvii di settembre e ottobre 2026",
+      "https://www.politichegiovanili.gov.it/comunicazione/news/2026/9/rapporto-esiti-progetti-2025/": "Rapporto sugli esiti dell’esperienza degli operatori volontari a 12 mesi dalla conclusione del servizio civile universale",
+      "https://www.politichegiovanili.gov.it/comunicazione/news/2026/9/relazione-al-parlamento-2025/": "Pubblicata la Relazione sull'organizzazione, sulla gestione e sullo svolgimento del Servizio civile universale relativa all’anno 2025",
+      "https://www.politichegiovanili.gov.it/comunicazione/news/2026/9/report-bando-26-giugno/": "Report bando SCU del 26 giugno 2026",
+      "https://www.politichegiovanili.gov.it/comunicazione/news/2026/9/rilevazione_enti_alboscu/": "Rilevazione dei coordinamenti degli enti iscritti all’Albo di servizio civile universale",
+      "https://www.politichegiovanili.gov.it/comunicazione/news/2026/9/webinar-8-settembre/": "Avviso agli Enti di servizio civile universale: Webinar 8 settembre 2026 ore 15:30 - 16:30 - Presentazione Circolare Avvii del 13 maggio 2026",
+      "https://www.politichegiovanili.gov.it/dipartimento/organizzazione/ufficio-per-il-servizio-civile-universale/": "Ufficio SCU",
+      "https://www.politichegiovanili.gov.it/faq/volontari/": "FAQ Operatori Volontari",
+      "https://www.politichegiovanili.gov.it/servizio-civile/": "Servizio Civile",
+      "https://www.politichegiovanili.gov.it/servizio-civile/attestati-servizio-civile-universale/": "Attestati Servizio Civile Universale",
+      "https://www.politichegiovanili.gov.it/servizio-civile/bandi-e-avvisi-di-servizio-civile/": "Bandi e Avvisi di Servizio Civile",
+      "https://www.politichegiovanili.gov.it/servizio-civile/bandi-e-avvisi-di-servizio-civile/avvisi-di-presentazione-programmi-e-progetti/": "Dipartimento per le Politiche Giovanili e il Servizio Civile Universale",
+      "https://www.politichegiovanili.gov.it/servizio-civile/bandi-e-avvisi-di-servizio-civile/bandi-di-selezione-volontari/": "Dipartimento per le Politiche Giovanili e il Servizio Civile Universale",
+      "https://www.politichegiovanili.gov.it/servizio-civile/consulta/": "Consulta",
+      "https://www.politichegiovanili.gov.it/servizio-civile/corpi-civili-di-pace/": "Corpi civili di pace",
+      "https://www.politichegiovanili.gov.it/servizio-civile/cosa-e-il-servizio-civile/": "Cosa è il Servizio Civile",
+      "https://www.politichegiovanili.gov.it/servizio-civile/enti/": "Enti",
+      "https://www.politichegiovanili.gov.it/servizio-civile/i-numeri-del-servizio-civile-universale/": "I numeri del Servizio civile",
+      "https://www.politichegiovanili.gov.it/servizio-civile/i-numeri-del-servizio-civile-universale/guida-alla-navigazione/": "Guida alla navigazione",
+      "https://www.politichegiovanili.gov.it/servizio-civile/obiezione-di-coscienza/": "Obiezione di coscienza",
+      "https://www.politichegiovanili.gov.it/servizio-civile/operatori-volontari/": "Operatori volontari",
+      "https://www.politichegiovanili.gov.it/servizio-civile/pnrr/": "PNRR",
+      "https://www.politichegiovanili.gov.it/servizio-civile/sc-all-estero/": "Servizio civile all'estero",
+      "https://www.politichegiovanili.gov.it/servizio-civile/servizio-civile-in-cifre/": "Servizio Civile in cifre",
+      "https://www.politichegiovanili.gov.it/servizio-civile/sistema-unico-sc/": "Sistema Unico SC",
+      "https://www.politichegiovanili.gov.it/servizio-civile/storia_new/": "Storia"
+    },
     "last_error": null,
-    "partial_errors": [
-      "https://www.politichegiovanili.gov.it/: unreachable after 3 attempts from runner IP 52.152.180.203: HTTPSConnectionPool(host='www.politichegiovanili.gov.it', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.politichegiovanili.gov.it', port=443) at 0x7f1586e15f40>, 'Connection to www.politichegiovanili.gov.it timed out. (connect timeout=30)'))",
-      "https://www.politichegiovanili.gov.it/comunicazione/avvisi-e-bandi/: unreachable after 3 attempts from runner IP 52.152.180.203: HTTPSConnectionPool(host='www.politichegiovanili.gov.it', port=443): Max retries exceeded with url: /comunicazione/avvisi-e-bandi/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.politichegiovanili.gov.it', port=443) at 0x7f1586e16f00>, 'Connection to www.politichegiovanili.gov.it timed out. (connect timeout=30)'))",
-      "https://www.politichegiovanili.gov.it/comunicazione/news/: unreachable after 3 attempts from runner IP 52.152.180.203: HTTPSConnectionPool(host='www.politichegiovanili.gov.it', port=443): Max retries exceeded with url: /comunicazione/news/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.politichegiovanili.gov.it', port=443) at 0x7f1586e15d60>, 'Connection to www.politichegiovanili.gov.it timed out. (connect timeout=30)'))",
-      "https://www.politichegiovanili.gov.it/servizio-civile/: unreachable after 3 attempts from runner IP 52.152.180.203: HTTPSConnectionPool(host='www.politichegiovanili.gov.it', port=443): Max retries exceeded with url: /servizio-civile/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.politichegiovanili.gov.it', port=443) at 0x7f1586e14140>, 'Connection to www.politichegiovanili.gov.it timed out. (connect timeout=30)'))",
-      "https://www.politichegiovanili.gov.it/servizio-civile/bandi-e-avvisi-di-servizio-civile/: unreachable after 3 attempts from runner IP 52.152.180.203: HTTPSConnectionPool(host='www.politichegiovanili.gov.it', port=443): Max retries exceeded with url: /servizio-civile/bandi-e-avvisi-di-servizio-civile/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.politichegiovanili.gov.it', port=443) at 0x7f1586e14b90>, 'Connection to www.politichegiovanili.gov.it timed out. (connect timeout=30)'))",
-      "https://www.politichegiovanili.gov.it/servizio-civile/bandi-e-avvisi-di-servizio-civile/avvisi-di-presentazione-programmi-e-progetti/: unreachable after 3 attempts from runner IP 52.152.180.203: HTTPSConnectionPool(host='www.politichegiovanili.gov.it', port=443): Max retries exceeded with url: /servizio-civile/bandi-e-avvisi-di-servizio-civile/avvisi-di-presentazione-programmi-e-progetti/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.politichegiovanili.gov.it', port=443) at 0x7f1586e47170>, 'Connection to www.politichegiovanili.gov.it timed out. (connect timeout=30)'))",
-      "https://www.politichegiovanili.gov.it/servizio-civile/bandi-e-avvisi-di-servizio-civile/bandi-di-selezione-volontari/: unreachable after 3 attempts from runner IP 52.152.180.203: HTTPSConnectionPool(host='www.politichegiovanili.gov.it', port=443): Max retries exceeded with url: /servizio-civile/bandi-e-avvisi-di-servizio-civile/bandi-di-selezione-volontari/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.politichegiovanili.gov.it', port=443) at 0x7f1586e15ee0>, 'Connection to www.politichegiovanili.gov.it timed out. (connect timeout=30)'))"
-    ]
+    "partial_errors": []
   },
   "supplenze_convocazioni": {
-    "checked": "2026-09-17T08:38:04.657295+00:00",
+    "checked": "2026-09-17T20:10:18.411006+00:00",
     "consecutive_errors": 0,
     "error_notified": false,
-    "hash": "0d374937d779a160565f40b2bf3a7c99c943461df990fe674d3fc8ad9c43916f",
+    "hash": "13b6d135da4cff7d9bd3256b7ed875dac5b1177d9101c373e147e832b2b858be",
     "items": {
       "https://cl-en.usr.sicilia.it/assennato-concetta-decreto-misura-compensativa-del-tirocinio-di-adattamento-cl-di-concorso-a045-scienze-economico-aziendali/": "Assennato Concetta – Decreto Misura Compensativa del Tirocinio di Adattamento cl di concorso A045 Scienze Economico – Aziendali",
       "https://cl-en.usr.sicilia.it/decreto-di-autorizzazione-alla-trasformazione-del-contratto-di-lavoro-da-tempo-pieno-a-tempo-parziale-docenti-neo-immessi-in-ruolo-a-s-2026-2027/": "Decreto di autorizzazione alla trasformazione del contratto di lavoro da tempo pieno a tempo parziale – Docenti Neo Immessi in ruolo a.s. 2026/2027",
-      "https://cl-en.usr.sicilia.it/gae-e-gps-conferimento-incarichi-a-tempo-determinato-a-s-2026-2027-i-turno-rettifica-del-07-09/": "GAE e GPS – Conferimento incarichi a tempo determinato a.s. 2026/2027- I° turno-rettifica del 07.09.",
       "https://cl-en.usr.sicilia.it/gae-e-gps-conferimento-incarichi-a-tempo-determinato-a-s-2026-2027-ii-turno-rettifica-nomina-as12-provincia-di-enna/": "GAE e GPS – Conferimento incarichi a tempo determinato a.s. 2026/2027- II turno- rettifica nomina AS12 provincia di Enna",
       "https://cl-en.usr.sicilia.it/gae-e-gps-conferimento-incarichi-a-tempo-determinato-a-s-20262027-ii-turno/": "GAE e GPS – Conferimento incarichi a tempo determinato a.s. 20262027 – II turno",
       "https://cl-en.usr.sicilia.it/greco-mario-decreto-misura-compensativa-del-tirocinio-di-adattamento-cl-di-concorso-a046-scienze-giuridico-economiche/": "Greco Mario – Decreto Misura Compensativa del Tirocinio di Adattamento cl di concorso A046 Scienze Giuridico – Economiche",
       "https://cl-en.usr.sicilia.it/maddiona-ketty-decreto-misura-compensativa-del-tirocinio-di-adattamento-cl-di-concorso-a011-discipline-letterarie-e-latino-negli-istituti-di-istruzione-secondaria-di-ii-grado/": "Maddiona Ketty – Decreto Misura Compensativa del Tirocinio di Adattamento cl di concorso A011 DISCIPLINE LETTERARIE E LATINO NEGLI ISTITUTI DI ISTRUZIONE SECONDARIA DI II GRADO",
       "https://cl-en.usr.sicilia.it/rettifica-sede-assegnata-scuola-primaria-sostegno-docente-a-t-d-burgio-rita-giuseppina-provincia-di-caltanissetta/": "Rettifica sede assegnata scuola primaria sostegno – docente a T.D. Burgio Rita Giuseppina – Provincia di Caltanissetta",
       "https://cl-en.usr.sicilia.it/rettifica-sede-assegnata-scuola-secondaria-di-primo-grado-sostegno-docente-a-t-d-drogo-federica-provincia-di-caltanissetta/": "Rettifica sede assegnata scuola secondaria di primo grado sostegno – docente a T.D. Drogo Federica – Provincia di Caltanissetta",
+      "https://cl-en.usr.sicilia.it/rettifica-sede-assegnata-scuola-secondaria-di-secondo-grado-sostegno-docente-a-t-d-di-vincenzo-alessandra-provincia-di-caltanissetta/": "Rettifica sede assegnata scuola secondaria di secondo grado sostegno – docente a T.D. Di Vincenzo Alessandra – Provincia di Caltanissetta",
       "https://cl-en.usr.sicilia.it/salamone-antonina-decreto-misura-compensativa-del-tirocinio-di-adattamento-cl-di-concorso-a027-matematica-e-fisica/": "Salamone Antonina – Decreto Misura Compensativa del Tirocinio di Adattamento cl di concorso A027 Matematica e Fisica"
     },
     "last_error": null
   },
   "uke_dottorati": {
-    "checked": "2026-09-17T08:20:15.251200+00:00",
+    "checked": "2026-09-17T20:09:41.409563+00:00",
     "consecutive_errors": 0,
     "error_notified": false,
     "hash": "8423ec994f54a36708afd5dcc2c988d53eb713300c9010c624df63f5dbf37d19",
@@ -197,7 +228,7 @@
     "last_error": null
   },
   "uke_lavoro_altre_figure": {
-    "checked": "2026-09-17T08:20:22.965425+00:00",
+    "checked": "2026-09-17T20:09:49.809817+00:00",
     "consecutive_errors": 0,
     "error_notified": false,
     "hash": "56203ca1efaf9e27d1bcde799e51767cf3dd0c61ad279fcedd61888791b1cbbd",
@@ -207,7 +238,7 @@
     "last_error": null
   },
   "uke_lavoro_docenti_a_contratto": {
-    "checked": "2026-09-17T08:20:20.310702+00:00",
+    "checked": "2026-09-17T20:09:46.967607+00:00",
     "consecutive_errors": 0,
     "error_notified": false,
     "hash": "9df03a6bcc0042e7aee5e99abadf7d86ba7646c026cadb6e85efd36a07806415",
@@ -217,7 +248,7 @@
     "last_error": null
   },
   "uke_lavoro_opportunita_studenti": {
-    "checked": "2026-09-17T08:20:25.360921+00:00",
+    "checked": "2026-09-17T20:09:52.063717+00:00",
     "consecutive_errors": 0,
     "error_notified": false,
     "hash": "0af6355e78365cb3c424985bf08f93936cfb49e84ff850bdc24bf9764e9d283f",
@@ -227,7 +258,7 @@
     "last_error": null
   },
   "uke_lavoro_professori_ricercatori": {
-    "checked": "2026-09-17T08:20:18.939343+00:00",
+    "checked": "2026-09-17T20:09:44.872216+00:00",
     "consecutive_errors": 0,
     "error_notified": false,
     "hash": "47f1bff0269595bad586107d108c9a88904566247dc0ef0868139bb129e71860",
